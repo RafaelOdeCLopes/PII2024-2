@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PII2024_2
 {
-    internal class Conexao
+    internal class SQLServer
     {
         SqlConnection conn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
