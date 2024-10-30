@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -26,9 +27,31 @@ namespace PII2024_2
         }
         public void Executar(string sql)
         {
+            Conectar();
             Cmd.Connection = Conn;
             Cmd.CommandText = sql;
             Cmd.ExecuteNonQuery();
+            Desconectar();
+        }
+        public DataTable RetornarTabela(string sql)
+        {
+            DataTable dt = new DataTable();
+            Conectar();
+            SqlCommand cmd = new SqlCommand(sql, Conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            Desconectar();
+            return dt;
+        }
+        public DataSet RetornarBanco(string sql)
+        {
+            DataSet ds = new DataSet();
+            Conectar();
+            SqlCommand cmd = new SqlCommand(sql, Conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            Desconectar();
+            return ds;
         }
     }
 }
