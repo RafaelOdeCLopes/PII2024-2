@@ -74,7 +74,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alimentos.cs" />
+    <Compile Include="Doacoes.cs" />
+    <Compile Include="Doadores.cs" />
+    <Compile Include="EmpresasEntregadoras.cs" />
+    <Compile Include="EmpresasFabricantes.cs" />
+    <Compile Include="Entregas.cs" />
+    <Compile Include="Familias.cs" />
     <Compile Include="Neo4j.cs" />
+    <Compile Include="Pedidos.cs" />
     <Compile Include="SQLServer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
