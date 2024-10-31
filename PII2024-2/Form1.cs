@@ -16,5 +16,10 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
