@@ -75,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimentos.cs" />
+    <Compile Include="cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastro.Designer.cs">
+      <DependentUpon>cadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doacoes.cs" />
     <Compile Include="Doadores.cs" />
     <Compile Include="EmpresasEntregadoras.cs" />
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cadastro.resx">
+      <DependentUpon>cadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FomeZero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
