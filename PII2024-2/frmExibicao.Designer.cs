@@ -32,6 +32,7 @@
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.lblTabela = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExibicao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,17 +43,17 @@
             this.dgvExibicao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvExibicao.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvExibicao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExibicao.Location = new System.Drawing.Point(12, 105);
+            this.dgvExibicao.Location = new System.Drawing.Point(12, 212);
             this.dgvExibicao.Name = "dgvExibicao";
             this.dgvExibicao.RowHeadersWidth = 51;
             this.dgvExibicao.RowTemplate.Height = 24;
-            this.dgvExibicao.Size = new System.Drawing.Size(952, 450);
+            this.dgvExibicao.Size = new System.Drawing.Size(952, 447);
             this.dgvExibicao.TabIndex = 0;
             // 
             // btnInserir
             // 
             this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnInserir.Location = new System.Drawing.Point(60, 23);
+            this.btnInserir.Location = new System.Drawing.Point(76, 121);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(161, 52);
             this.btnInserir.TabIndex = 1;
@@ -62,7 +63,7 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnEditar.Location = new System.Drawing.Point(418, 23);
+            this.btnEditar.Location = new System.Drawing.Point(410, 121);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(161, 52);
             this.btnEditar.TabIndex = 2;
@@ -72,18 +73,29 @@
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExcluir.Location = new System.Drawing.Point(749, 23);
+            this.btnExcluir.Location = new System.Drawing.Point(744, 121);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(161, 52);
             this.btnExcluir.TabIndex = 3;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
+            // lblTabela
+            // 
+            this.lblTabela.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTabela.Location = new System.Drawing.Point(5, 9);
+            this.lblTabela.Name = "lblTabela";
+            this.lblTabela.Size = new System.Drawing.Size(952, 86);
+            this.lblTabela.TabIndex = 4;
+            this.lblTabela.Text = "Tabela: ";
+            this.lblTabela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmExibicao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 567);
+            this.ClientSize = new System.Drawing.Size(976, 671);
+            this.Controls.Add(this.lblTabela);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnInserir);
@@ -103,5 +115,6 @@
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Label lblTabela;
     }
 }

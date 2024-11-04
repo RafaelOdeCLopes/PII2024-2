@@ -24,38 +24,38 @@ namespace PII2024_2
 
         private void alimentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmExibicao ex1 = new frmExibicao("SELECT * FROM alimentos");
-            ex1.ShowDialog();
+            frmExibicao ex = new frmExibicao("SELECT * FROM alimentos", "alimentos");
+            ex.ShowDialog();
         }
 
         private void doaçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmExibicao ex2 = new frmExibicao("SELECT * FROM doacoes");
-            ex2.ShowDialog();
+            frmExibicao ex = new frmExibicao("SELECT * FROM doacoes", "doacoes");
+            ex.ShowDialog();
         }
 
         private void empresasEntregadorasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmExibicao ex3 = new frmExibicao("SELECT * FROM empresas_entregadoras");
-            ex3.ShowDialog();
+            frmExibicao ex = new frmExibicao("SELECT * FROM empresas_entregadoras", "emp_e");
+            ex.ShowDialog();
         }
 
         private void empresasFabricantesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmExibicao ex4 = new frmExibicao("SELECT * FROM empresas_fabricantes");
-            ex4.ShowDialog();
+            frmExibicao ex = new frmExibicao("SELECT * FROM empresas_fabricantes", "emp_f");
+            ex.ShowDialog();
         }
 
         private void entregasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmExibicao ex5 = new frmExibicao("SELECT * FROM entregas");
-            ex5.ShowDialog();
+            frmExibicao ex = new frmExibicao("SELECT * FROM entregas", "entregas");
+            ex.ShowDialog();
         }
 
         private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmExibicao ex6 = new frmExibicao("SELECT * FROM pedidos");
-            ex6.ShowDialog();
+            frmExibicao ex = new frmExibicao("SELECT * FROM pedidos", "pedidos");
+            ex.ShowDialog();
         }
     }
 }
