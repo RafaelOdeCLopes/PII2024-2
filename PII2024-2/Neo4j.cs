@@ -14,9 +14,9 @@ namespace PII2024_2
 
         public void Conectar()
         {
-            string uri = "uri";
-            string user = "usuário";
-            string password = "senha";
+            string uri = "neo4j+s://fa112349.databases.neo4j.io";
+            string user = "neo4j";
+            string password = "dO-DzFf-io_S_ln8kPIqR-_bfBnlPjGVIqfjOO0QINA";
             driver = GraphDatabase.Driver(uri, AuthTokens.Basic(user, password));
         }
 
