@@ -75,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimentos.cs" />
+    <Compile Include="CadastroDoadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroDoadores.Designer.cs">
+      <DependentUpon>CadastroDoadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="cadastroFamilia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastroDoadores.resx">
+      <DependentUpon>CadastroDoadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cadastroFamilia.resx">
       <DependentUpon>cadastroFamilia.cs</DependentUpon>
     </EmbeddedResource>
