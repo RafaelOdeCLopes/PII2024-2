@@ -38,7 +38,7 @@
             // 
             this.DgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvPedido.Location = new System.Drawing.Point(123, 126);
-            this.DgvPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvPedido.Margin = new System.Windows.Forms.Padding(4);
             this.DgvPedido.Name = "DgvPedido";
             this.DgvPedido.RowHeadersWidth = 51;
             this.DgvPedido.Size = new System.Drawing.Size(489, 316);
@@ -48,7 +48,7 @@
             // 
             this.CbPedido.FormattingEnabled = true;
             this.CbPedido.Location = new System.Drawing.Point(123, 70);
-            this.CbPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CbPedido.Margin = new System.Windows.Forms.Padding(4);
             this.CbPedido.Name = "CbPedido";
             this.CbPedido.Size = new System.Drawing.Size(488, 24);
             this.CbPedido.TabIndex = 1;
@@ -76,8 +76,9 @@
             this.Controls.Add(this.CbPedido);
             this.Controls.Add(this.DgvPedido);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GridPedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de pedidos";
             ((System.ComponentModel.ISupportInitialize)(this.DgvPedido)).EndInit();
             this.ResumeLayout(false);

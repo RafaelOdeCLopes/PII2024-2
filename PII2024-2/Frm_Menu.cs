@@ -13,6 +13,7 @@ namespace PII2024_2
     public partial class Frm_Menu : Form
     {
         bool sidebarExpand;
+        bool homeCollapsed;
         public Frm_Menu()
         {
             InitializeComponent();
@@ -75,5 +76,35 @@ namespace PII2024_2
         {
 
         }
+
+        private void HomeTimer_Tick(object sender, EventArgs e)
+        {
+            if (homeCollapsed)
+            {
+                HomeContainer.Height += 10;
+                if (HomeContainer.Height == HomeContainer.MaximumSize.Height)
+                {
+                    homeCollapsed = false;
+                    HomeTimer.Stop();
+                }
+
+            }else
+            {
+                HomeContainer.Height -= 10;
+                if(HomeContainer.Height == HomeContainer.MinimumSize.Height)
+                {
+                    homeCollapsed = true;
+                    HomeTimer.Stop();
+                }
+            }
+        }
+
+        private void btn_Menu_Click(object sender, EventArgs e)
+        {
+
+            HomeTimer.Start();
+        }
+
+       
     }
 }

@@ -51,7 +51,7 @@
             // 
             this.CbEntrega.FormattingEnabled = true;
             this.CbEntrega.Location = new System.Drawing.Point(144, 89);
-            this.CbEntrega.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CbEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.CbEntrega.Name = "CbEntrega";
             this.CbEntrega.Size = new System.Drawing.Size(488, 24);
             this.CbEntrega.TabIndex = 5;
@@ -60,7 +60,7 @@
             // 
             this.DgvEntrega.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvEntrega.Location = new System.Drawing.Point(144, 121);
-            this.DgvEntrega.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.DgvEntrega.Name = "DgvEntrega";
             this.DgvEntrega.RowHeadersWidth = 51;
             this.DgvEntrega.Size = new System.Drawing.Size(489, 316);
@@ -77,8 +77,9 @@
             this.Controls.Add(this.CbEntrega);
             this.Controls.Add(this.DgvEntrega);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GridConsulta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de entrega";
             ((System.ComponentModel.ISupportInitialize)(this.DgvEntrega)).EndInit();
             this.ResumeLayout(false);

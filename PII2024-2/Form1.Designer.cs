@@ -101,6 +101,7 @@
             this.Controls.Add(this.mnsTelaInicial);
             this.MainMenuStrip = this.mnsTelaInicial;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela inicial";
             this.mnsTelaInicial.ResumeLayout(false);
             this.mnsTelaInicial.PerformLayout();
