@@ -87,6 +87,18 @@
     <Compile Include="EmpresasFabricantes.cs" />
     <Compile Include="Entregas.cs" />
     <Compile Include="Familias.cs" />
+    <Compile Include="GridEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridEntrega.Designer.cs">
+      <DependentUpon>GridEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPedido.Designer.cs">
+      <DependentUpon>GridPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Neo4j.cs" />
     <Compile Include="Pedidos.cs" />
     <Compile Include="SQLServer.cs" />
@@ -103,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridEntrega.resx">
+      <DependentUpon>GridEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPedido.resx">
+      <DependentUpon>GridPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
