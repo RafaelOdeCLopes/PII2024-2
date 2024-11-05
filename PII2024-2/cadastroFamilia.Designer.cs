@@ -43,7 +43,7 @@
             // TbNome
             // 
             this.TbNome.Location = new System.Drawing.Point(140, 182);
-            this.TbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbNome.Margin = new System.Windows.Forms.Padding(4);
             this.TbNome.Name = "TbNome";
             this.TbNome.Size = new System.Drawing.Size(204, 22);
             this.TbNome.TabIndex = 0;
@@ -56,9 +56,10 @@
             this.lblCadastro.Location = new System.Drawing.Point(133, 55);
             this.lblCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(201, 31);
+            this.lblCadastro.Size = new System.Drawing.Size(305, 31);
             this.lblCadastro.TabIndex = 2;
-            this.lblCadastro.Text = "Faça o cadastro :";
+            this.lblCadastro.Text = "Faça o cadastro da família:";
+            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
             // 
             // lblNome
             // 
@@ -75,7 +76,7 @@
             // TbTelefone
             // 
             this.TbTelefone.Location = new System.Drawing.Point(450, 179);
-            this.TbTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.TbTelefone.Name = "TbTelefone";
             this.TbTelefone.Size = new System.Drawing.Size(204, 22);
             this.TbTelefone.TabIndex = 4;
@@ -83,7 +84,7 @@
             // TbEndereco
             // 
             this.TbEndereco.Location = new System.Drawing.Point(140, 272);
-            this.TbEndereco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbEndereco.Margin = new System.Windows.Forms.Padding(4);
             this.TbEndereco.Name = "TbEndereco";
             this.TbEndereco.Size = new System.Drawing.Size(204, 22);
             this.TbEndereco.TabIndex = 5;
@@ -91,7 +92,7 @@
             // TbMembros
             // 
             this.TbMembros.Location = new System.Drawing.Point(450, 261);
-            this.TbMembros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbMembros.Margin = new System.Windows.Forms.Padding(4);
             this.TbMembros.Name = "TbMembros";
             this.TbMembros.Size = new System.Drawing.Size(204, 22);
             this.TbMembros.TabIndex = 6;
@@ -136,7 +137,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(185, 489);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 34);
             this.button1.TabIndex = 10;
@@ -161,7 +162,7 @@
             this.Controls.Add(this.lblCadastro);
             this.Controls.Add(this.TbNome);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCadastro";
             this.Text = "Cadastro";
             this.ResumeLayout(false);
