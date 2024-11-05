@@ -75,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimentos.cs" />
+    <Compile Include="Cadastro_EmpresaFabricante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro_EmpresaFabricante.Designer.cs">
+      <DependentUpon>Cadastro_EmpresaFabricante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doacoes.cs" />
     <Compile Include="Doadores.cs" />
     <Compile Include="EmpresasEntregadoras.cs" />
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastro_EmpresaFabricante.resx">
+      <DependentUpon>Cadastro_EmpresaFabricante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
