@@ -32,6 +32,7 @@
             this.lblTelaInicial2 = new System.Windows.Forms.Label();
             this.mnsTelaInicial = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_Iniciar = new System.Windows.Forms.Button();
             this.mnsTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +78,15 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // btn_Iniciar
+            // 
+            this.btn_Iniciar.Location = new System.Drawing.Point(330, 309);
+            this.btn_Iniciar.Name = "btn_Iniciar";
+            this.btn_Iniciar.Size = new System.Drawing.Size(118, 41);
+            this.btn_Iniciar.TabIndex = 3;
+            this.btn_Iniciar.Text = "Iniciar";
+            this.btn_Iniciar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -84,6 +94,7 @@
             this.BackgroundImage = global::PII2024_2.Properties.Resources.FomeZero;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Iniciar);
             this.Controls.Add(this.lblTelaInicial2);
             this.Controls.Add(this.lblTelaInicial1);
             this.Controls.Add(this.mnsTelaInicial);
@@ -103,6 +114,7 @@
         private System.Windows.Forms.Label lblTelaInicial2;
         private System.Windows.Forms.MenuStrip mnsTelaInicial;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.Button btn_Iniciar;
     }
 }
 
