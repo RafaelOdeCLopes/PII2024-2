@@ -75,6 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alimentos.cs" />
+    <Compile Include="cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastro.Designer.cs">
+      <DependentUpon>cadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro_EmpresaFabricante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,18 @@
     <Compile Include="EmpresasFabricantes.cs" />
     <Compile Include="Entregas.cs" />
     <Compile Include="Familias.cs" />
+    <Compile Include="GridEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridEntrega.Designer.cs">
+      <DependentUpon>GridEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPedido.Designer.cs">
+      <DependentUpon>GridPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Neo4j.cs" />
     <Compile Include="Pedidos.cs" />
     <Compile Include="SQLServer.cs" />
@@ -98,11 +116,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadastro_EmpresaFabricante.resx">
-      <DependentUpon>Cadastro_EmpresaFabricante.cs</DependentUpon>
+    <EmbeddedResource Include="cadastro.resx">
+      <DependentUpon>cadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridEntrega.resx">
+      <DependentUpon>GridEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPedido.resx">
+      <DependentUpon>GridPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FomeZero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
