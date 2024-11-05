@@ -42,58 +42,57 @@
             // 
             // TbNome
             // 
-            this.TbNome.Location = new System.Drawing.Point(140, 182);
-            this.TbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbNome.Location = new System.Drawing.Point(105, 148);
             this.TbNome.Name = "TbNome";
-            this.TbNome.Size = new System.Drawing.Size(204, 22);
+            this.TbNome.Size = new System.Drawing.Size(154, 20);
             this.TbNome.TabIndex = 0;
+            this.TbNome.TextChanged += new System.EventHandler(this.TbNome_TextChanged);
             // 
             // lblCadastro
             // 
             this.lblCadastro.AutoSize = true;
             this.lblCadastro.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadastro.Location = new System.Drawing.Point(133, 55);
-            this.lblCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCadastro.Location = new System.Drawing.Point(100, 45);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(201, 31);
+            this.lblCadastro.Size = new System.Drawing.Size(160, 25);
             this.lblCadastro.TabIndex = 2;
             this.lblCadastro.Text = "Faça o cadastro :";
+            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(137, 143);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Location = new System.Drawing.Point(103, 116);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(138, 20);
+            this.lblNome.Size = new System.Drawing.Size(109, 16);
             this.lblNome.TabIndex = 3;
             this.lblNome.Text = "Nome Responsável :";
+            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // TbTelefone
             // 
-            this.TbTelefone.Location = new System.Drawing.Point(450, 179);
-            this.TbTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbTelefone.Location = new System.Drawing.Point(338, 145);
             this.TbTelefone.Name = "TbTelefone";
-            this.TbTelefone.Size = new System.Drawing.Size(204, 22);
+            this.TbTelefone.Size = new System.Drawing.Size(154, 20);
             this.TbTelefone.TabIndex = 4;
+            this.TbTelefone.TextChanged += new System.EventHandler(this.TbTelefone_TextChanged);
             // 
             // TbEndereco
             // 
-            this.TbEndereco.Location = new System.Drawing.Point(140, 272);
-            this.TbEndereco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbEndereco.Location = new System.Drawing.Point(105, 221);
             this.TbEndereco.Name = "TbEndereco";
-            this.TbEndereco.Size = new System.Drawing.Size(204, 22);
+            this.TbEndereco.Size = new System.Drawing.Size(154, 20);
             this.TbEndereco.TabIndex = 5;
+            this.TbEndereco.TextChanged += new System.EventHandler(this.TbEndereco_TextChanged);
             // 
             // TbMembros
             // 
-            this.TbMembros.Location = new System.Drawing.Point(450, 261);
-            this.TbMembros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbMembros.Location = new System.Drawing.Point(338, 212);
             this.TbMembros.Name = "TbMembros";
-            this.TbMembros.Size = new System.Drawing.Size(204, 22);
+            this.TbMembros.Size = new System.Drawing.Size(154, 20);
             this.TbMembros.TabIndex = 6;
             // 
             // lblEndereco
@@ -101,55 +100,54 @@
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.BackColor = System.Drawing.Color.Transparent;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco.Location = new System.Drawing.Point(136, 238);
-            this.lblEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEndereco.Location = new System.Drawing.Point(102, 193);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(77, 20);
+            this.lblEndereco.Size = new System.Drawing.Size(60, 16);
             this.lblEndereco.TabIndex = 7;
             this.lblEndereco.Text = "Endereço :";
+            this.lblEndereco.Click += new System.EventHandler(this.lblEndereco_Click);
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(447, 143);
-            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone.Location = new System.Drawing.Point(335, 116);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(72, 20);
+            this.lblTelefone.Size = new System.Drawing.Size(55, 16);
             this.lblTelefone.TabIndex = 8;
             this.lblTelefone.Text = "Telefone :";
+            this.lblTelefone.Click += new System.EventHandler(this.lblTelefone_Click);
             // 
             // lblMembros
             // 
             this.lblMembros.AutoSize = true;
             this.lblMembros.BackColor = System.Drawing.Color.Transparent;
             this.lblMembros.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMembros.Location = new System.Drawing.Point(446, 227);
-            this.lblMembros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMembros.Location = new System.Drawing.Point(334, 184);
             this.lblMembros.Name = "lblMembros";
-            this.lblMembros.Size = new System.Drawing.Size(117, 20);
+            this.lblMembros.Size = new System.Drawing.Size(94, 16);
             this.lblMembros.TabIndex = 9;
             this.lblMembros.Text = "N° de membros :";
+            this.lblMembros.Click += new System.EventHandler(this.lblMembros_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(185, 489);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(139, 397);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 34);
+            this.button1.Size = new System.Drawing.Size(83, 28);
             this.button1.TabIndex = 10;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PII2024_2.Properties.Resources.Design_sem_nome__4_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblMembros);
             this.Controls.Add(this.lblTelefone);
@@ -161,7 +159,6 @@
             this.Controls.Add(this.lblCadastro);
             this.Controls.Add(this.TbNome);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCadastro";
             this.Text = "Cadastro";
             this.ResumeLayout(false);

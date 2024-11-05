@@ -16,5 +16,46 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
+
+    
+        private void lblTelefone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEndereco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMembros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbEndereco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbTelefone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
