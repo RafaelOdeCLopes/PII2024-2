@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class FrmCadastro : Form
+    public partial class FrmCadastro : Frm_Menu
     {
         public FrmCadastro()
         {

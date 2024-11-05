@@ -193,6 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSalvarcadastroalimentos);
             this.Controls.Add(this.cmbDocao);
@@ -212,6 +213,22 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastroAlimentos";
             this.Text = "Alimento";
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.txtNome, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.txtDescricao, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.txtQuantidade, 0);
+            this.Controls.SetChildIndex(this.mtbdata, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.label6, 0);
+            this.Controls.SetChildIndex(this.txtOrigem, 0);
+            this.Controls.SetChildIndex(this.label7, 0);
+            this.Controls.SetChildIndex(this.cmbEmpresa, 0);
+            this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.cmbDocao, 0);
+            this.Controls.SetChildIndex(this.btnSalvarcadastroalimentos, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

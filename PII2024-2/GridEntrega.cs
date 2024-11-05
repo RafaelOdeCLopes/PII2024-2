@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class GridConsulta : Form
+    public partial class GridConsulta : Frm_Menu
     {
         public GridConsulta()
         {

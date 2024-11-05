@@ -30,10 +30,7 @@
         {
             this.lblTelaInicial1 = new System.Windows.Forms.Label();
             this.lblTelaInicial2 = new System.Windows.Forms.Label();
-            this.mnsTelaInicial = new System.Windows.Forms.MenuStrip();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_Iniciar = new System.Windows.Forms.Button();
-            this.mnsTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTelaInicial1
@@ -60,27 +57,9 @@
             this.lblTelaInicial2.Text = "PII VIII";
             this.lblTelaInicial2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mnsTelaInicial
-            // 
-            this.mnsTelaInicial.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.mnsTelaInicial.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sairToolStripMenuItem});
-            this.mnsTelaInicial.Location = new System.Drawing.Point(0, 0);
-            this.mnsTelaInicial.Name = "mnsTelaInicial";
-            this.mnsTelaInicial.Size = new System.Drawing.Size(800, 28);
-            this.mnsTelaInicial.TabIndex = 2;
-            this.mnsTelaInicial.Text = "menuStrip1";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
             // btn_Iniciar
             // 
-            this.btn_Iniciar.Location = new System.Drawing.Point(330, 309);
+            this.btn_Iniciar.Location = new System.Drawing.Point(343, 309);
             this.btn_Iniciar.Name = "btn_Iniciar";
             this.btn_Iniciar.Size = new System.Drawing.Size(118, 41);
             this.btn_Iniciar.TabIndex = 3;
@@ -98,15 +77,10 @@
             this.Controls.Add(this.btn_Iniciar);
             this.Controls.Add(this.lblTelaInicial2);
             this.Controls.Add(this.lblTelaInicial1);
-            this.Controls.Add(this.mnsTelaInicial);
-            this.MainMenuStrip = this.mnsTelaInicial;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela inicial";
-            this.mnsTelaInicial.ResumeLayout(false);
-            this.mnsTelaInicial.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -114,8 +88,6 @@
 
         private System.Windows.Forms.Label lblTelaInicial1;
         private System.Windows.Forms.Label lblTelaInicial2;
-        private System.Windows.Forms.MenuStrip mnsTelaInicial;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Button btn_Iniciar;
     }
 }

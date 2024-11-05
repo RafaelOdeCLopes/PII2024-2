@@ -105,6 +105,37 @@ namespace PII2024_2
             HomeTimer.Start();
         }
 
-       
+        private void btn_CadastroFamiliar_Click(object sender, EventArgs e)
+        {
+           FrmCadastro cadastroFamilia = new FrmCadastro();
+            cadastroFamilia.Show();
+            this.Close();
+        }
+
+        private void btn_CadastroEmpresaFabricante_Click(object sender, EventArgs e)
+        {
+            Cadastro_EmpresaFabricante cadastroEmpresa = new Cadastro_EmpresaFabricante();
+            cadastroEmpresa.Show();
+            this.Close();
+        }
+
+        private void btn_CadastroEntregadora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CadastroDoadores_Click(object sender, EventArgs e)
+        {
+            CadastroDoadores cadastroDoadores = new CadastroDoadores();
+            cadastroDoadores.Show();
+            this.Close();
+        }
+
+        private void btn_CadastroAlimentos_Click(object sender, EventArgs e)
+        {
+            CadastroAlimentos cadastroAlimentos = new CadastroAlimentos();
+            cadastroAlimentos.Show();
+            this.Close();
+        }
     }
 }

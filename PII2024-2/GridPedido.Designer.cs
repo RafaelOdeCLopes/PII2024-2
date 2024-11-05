@@ -69,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PII2024_2.Properties.Resources.Design_sem_nome__4_;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblPedido);
@@ -78,8 +78,10 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GridPedido";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de pedidos";
+            this.Controls.SetChildIndex(this.DgvPedido, 0);
+            this.Controls.SetChildIndex(this.CbPedido, 0);
+            this.Controls.SetChildIndex(this.lblPedido, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DgvPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

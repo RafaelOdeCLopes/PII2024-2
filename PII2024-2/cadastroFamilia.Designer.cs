@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PII2024_2.Properties.Resources.Design_sem_nome__4_;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
@@ -165,6 +165,16 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCadastro";
             this.Text = "Cadastro";
+            this.Controls.SetChildIndex(this.TbNome, 0);
+            this.Controls.SetChildIndex(this.lblCadastro, 0);
+            this.Controls.SetChildIndex(this.lblNome, 0);
+            this.Controls.SetChildIndex(this.TbTelefone, 0);
+            this.Controls.SetChildIndex(this.TbEndereco, 0);
+            this.Controls.SetChildIndex(this.TbMembros, 0);
+            this.Controls.SetChildIndex(this.lblEndereco, 0);
+            this.Controls.SetChildIndex(this.lblTelefone, 0);
+            this.Controls.SetChildIndex(this.lblMembros, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

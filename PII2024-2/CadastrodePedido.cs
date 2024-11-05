@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class GridPedido : Frm_Menu
+    public partial class Pedido : Frm_Menu
     {
-        public GridPedido()
+        public Pedido()
         {
             InitializeComponent();
         }
