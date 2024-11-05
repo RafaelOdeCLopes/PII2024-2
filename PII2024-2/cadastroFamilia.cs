@@ -16,5 +16,10 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
+
+        private void lblCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_Menu = new System.Windows.Forms.Label();
             this.MenuButtom = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Menu = new System.Windows.Forms.Button();
             this.btn_Cadastro = new System.Windows.Forms.Button();
-            this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_Entrega = new System.Windows.Forms.Button();
-            this.lbl_Menu = new System.Windows.Forms.Label();
+            this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_Sair = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
@@ -61,6 +61,7 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(200, 450);
             this.sidebar.TabIndex = 0;
+            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
             // 
             // panel1
             // 
@@ -71,6 +72,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lbl_Menu
+            // 
+            this.lbl_Menu.AutoSize = true;
+            this.lbl_Menu.Location = new System.Drawing.Point(84, 32);
+            this.lbl_Menu.Name = "lbl_Menu";
+            this.lbl_Menu.Size = new System.Drawing.Size(40, 16);
+            this.lbl_Menu.TabIndex = 1;
+            this.lbl_Menu.Text = "Menu";
+            this.lbl_Menu.Click += new System.EventHandler(this.lbl_Menu_Click);
             // 
             // MenuButtom
             // 
@@ -117,18 +129,6 @@
             this.btn_Cadastro.Text = "Cadastros";
             this.btn_Cadastro.UseVisualStyleBackColor = false;
             // 
-            // btn_Pedidos
-            // 
-            this.btn_Pedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_Pedidos.FlatAppearance.BorderSize = 0;
-            this.btn_Pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Pedidos.Location = new System.Drawing.Point(3, 342);
-            this.btn_Pedidos.Name = "btn_Pedidos";
-            this.btn_Pedidos.Size = new System.Drawing.Size(200, 76);
-            this.btn_Pedidos.TabIndex = 4;
-            this.btn_Pedidos.Text = "Pedidos";
-            this.btn_Pedidos.UseVisualStyleBackColor = false;
-            // 
             // btn_Entrega
             // 
             this.btn_Entrega.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -141,14 +141,17 @@
             this.btn_Entrega.Text = "Entrega";
             this.btn_Entrega.UseVisualStyleBackColor = false;
             // 
-            // lbl_Menu
+            // btn_Pedidos
             // 
-            this.lbl_Menu.AutoSize = true;
-            this.lbl_Menu.Location = new System.Drawing.Point(84, 32);
-            this.lbl_Menu.Name = "lbl_Menu";
-            this.lbl_Menu.Size = new System.Drawing.Size(40, 16);
-            this.lbl_Menu.TabIndex = 1;
-            this.lbl_Menu.Text = "Menu";
+            this.btn_Pedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_Pedidos.FlatAppearance.BorderSize = 0;
+            this.btn_Pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Pedidos.Location = new System.Drawing.Point(3, 342);
+            this.btn_Pedidos.Name = "btn_Pedidos";
+            this.btn_Pedidos.Size = new System.Drawing.Size(200, 76);
+            this.btn_Pedidos.TabIndex = 4;
+            this.btn_Pedidos.Text = "Pedidos";
+            this.btn_Pedidos.UseVisualStyleBackColor = false;
             // 
             // btn_Sair
             // 

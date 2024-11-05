@@ -60,5 +60,20 @@ namespace PII2024_2
         {
             Application.Exit();
         }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_Menu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
