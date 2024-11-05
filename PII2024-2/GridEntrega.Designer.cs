@@ -63,6 +63,7 @@
             this.DgvEntrega.RowHeadersWidth = 51;
             this.DgvEntrega.Size = new System.Drawing.Size(367, 257);
             this.DgvEntrega.TabIndex = 4;
+            this.DgvEntrega.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEntrega_CellContentClick);
             // 
             // GridConsulta
             // 

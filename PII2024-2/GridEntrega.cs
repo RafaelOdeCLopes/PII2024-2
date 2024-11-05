@@ -58,6 +58,11 @@ namespace PII2024_2
             // TODO: Quando o banco de dados estiver disponível, buscar as informações de entrega
             // com base na seleção do ComboBox e preencher o DataGridView com os dados completos
         }
+
+        private void DgvEntrega_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 }
