@@ -16,5 +16,30 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
+
+        private void txt_NomeFabricante_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_TelefoneFabricante_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ConfirmarCadastroFabricante_Click(object sender, EventArgs e)
+        {
+            EmpresasFabricantes EmpFab = new EmpresasFabricantes();
+            EmpFab.NomeEmpresa = txt_NomeFabricante.Text;
+            EmpFab.Endereco = txt_EnderecoFabricante.Text;
+            EmpFab.Telefone = txt_TelefoneFabricante.Text;
+
+            MessageBox.Show(EmpFab.NomeEmpresa);
+        }
     }
 }
