@@ -21,5 +21,12 @@ namespace PII2024_2
         {
             this.Close();
         }
+
+        private void btn_Iniciar_Click(object sender, EventArgs e)
+        {
+            Frm_Menu menuPrincipal = new Frm_Menu();
+            menuPrincipal.Show();
+            this.Hide();
+        }
     }
 }

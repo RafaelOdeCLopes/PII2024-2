@@ -63,6 +63,16 @@ namespace PII2024_2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Degrade_Laranjaclaro {
+            get {
+                object obj = ResourceManager.GetObject("Degrade_Laranjaclaro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Design_sem_nome__4_ {
             get {
                 object obj = ResourceManager.GetObject("Design sem nome (4)", resourceCulture);
@@ -76,6 +86,16 @@ namespace PII2024_2.Properties {
         internal static System.Drawing.Bitmap FomeZero {
             get {
                 object obj = ResourceManager.GetObject("FomeZero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_png {
+            get {
+                object obj = ResourceManager.GetObject("menu_png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

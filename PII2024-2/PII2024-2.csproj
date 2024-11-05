@@ -87,6 +87,12 @@
     <Compile Include="EmpresasFabricantes.cs" />
     <Compile Include="Entregas.cs" />
     <Compile Include="Familias.cs" />
+    <Compile Include="Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GridEntrega.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GridEntrega.resx">
       <DependentUpon>GridEntrega.cs</DependentUpon>
@@ -151,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Design sem nome %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Degrade_Laranjaclaro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_png.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
