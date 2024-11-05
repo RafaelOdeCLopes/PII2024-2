@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_PaginaInicial = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -40,11 +43,19 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Coral;
             this.flowLayoutPanel1.BackgroundImage = global::PII2024_2.Properties.Resources.Degrade_Laranjaclaro;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(205, 450);
             this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 101);
+            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -66,12 +77,25 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fome ZerØ";
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 101);
-            this.panel1.TabIndex = 0;
+            this.panel2.Controls.Add(this.btn_PaginaInicial);
+            this.panel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(3, 110);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(205, 62);
+            this.panel2.TabIndex = 4;
+            // 
+            // btn_PaginaInicial
+            // 
+            this.btn_PaginaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PaginaInicial.Location = new System.Drawing.Point(-45, 3);
+            this.btn_PaginaInicial.Name = "btn_PaginaInicial";
+            this.btn_PaginaInicial.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_PaginaInicial.Size = new System.Drawing.Size(273, 53);
+            this.btn_PaginaInicial.TabIndex = 5;
+            this.btn_PaginaInicial.Text = "Página Inicial";
+            this.btn_PaginaInicial.UseVisualStyleBackColor = true;
             // 
             // Frm_Menu
             // 
@@ -86,6 +110,7 @@
             this.Name = "Frm_Menu";
             this.Text = "Menu";
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,5 +121,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_PaginaInicial;
     }
 }
