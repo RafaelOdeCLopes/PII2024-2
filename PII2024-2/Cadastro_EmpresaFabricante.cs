@@ -41,5 +41,10 @@ namespace PII2024_2
 
             MessageBox.Show(EmpFab.NomeEmpresa);
         }
+
+        private void Cadastro_EmpresaFabricante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
