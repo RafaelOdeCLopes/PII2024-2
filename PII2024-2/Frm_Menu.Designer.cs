@@ -265,7 +265,7 @@
             this.btn_sair.TabIndex = 5;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
-            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
+            this.btn_sair.Click += new System.EventHandler(this.btn_Sair_Click);
             // 
             // sidebarTimer
             // 
