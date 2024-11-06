@@ -39,9 +39,10 @@
             this.lblEntrega.AutoSize = true;
             this.lblEntrega.BackColor = System.Drawing.Color.Transparent;
             this.lblEntrega.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEntrega.Location = new System.Drawing.Point(154, 20);
+            this.lblEntrega.Location = new System.Drawing.Point(205, 25);
+            this.lblEntrega.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEntrega.Name = "lblEntrega";
-            this.lblEntrega.Size = new System.Drawing.Size(255, 25);
+            this.lblEntrega.Size = new System.Drawing.Size(322, 31);
             this.lblEntrega.TabIndex = 6;
             this.lblEntrega.Text = "Faça a consulta da entrega :";
             this.lblEntrega.Click += new System.EventHandler(this.lblPedido_Click);
@@ -49,36 +50,40 @@
             // CbEntrega
             // 
             this.CbEntrega.FormattingEnabled = true;
-            this.CbEntrega.Location = new System.Drawing.Point(108, 72);
+            this.CbEntrega.Location = new System.Drawing.Point(144, 89);
+            this.CbEntrega.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CbEntrega.Name = "CbEntrega";
-            this.CbEntrega.Size = new System.Drawing.Size(367, 21);
+            this.CbEntrega.Size = new System.Drawing.Size(488, 24);
             this.CbEntrega.TabIndex = 5;
             this.CbEntrega.SelectedIndexChanged += new System.EventHandler(this.CbEntrega_SelectedIndexChanged);
             // 
             // DgvEntrega
             // 
             this.DgvEntrega.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvEntrega.Location = new System.Drawing.Point(108, 98);
+            this.DgvEntrega.Location = new System.Drawing.Point(144, 121);
+            this.DgvEntrega.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DgvEntrega.Name = "DgvEntrega";
             this.DgvEntrega.RowHeadersWidth = 51;
-            this.DgvEntrega.Size = new System.Drawing.Size(367, 257);
+            this.DgvEntrega.Size = new System.Drawing.Size(489, 316);
             this.DgvEntrega.TabIndex = 4;
             // 
             // GridConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PII2024_2.Properties.Resources.Design_sem_nome__4_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblEntrega);
             this.Controls.Add(this.CbEntrega);
             this.Controls.Add(this.DgvEntrega);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GridConsulta";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de entrega";
             this.Load += new System.EventHandler(this.GridConsulta_Load);
+            this.Controls.SetChildIndex(this.DgvEntrega, 0);
+            this.Controls.SetChildIndex(this.CbEntrega, 0);
+            this.Controls.SetChildIndex(this.lblEntrega, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DgvEntrega)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -16,5 +16,10 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
+
+        private void Pedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

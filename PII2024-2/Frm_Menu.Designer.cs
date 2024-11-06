@@ -34,6 +34,7 @@
             this.lbl_Menu = new System.Windows.Forms.Label();
             this.MenuButtom = new System.Windows.Forms.PictureBox();
             this.HomeContainer = new System.Windows.Forms.Panel();
+            this.btn_CadastroDoadores = new System.Windows.Forms.Button();
             this.btn_CadastroAlimentos = new System.Windows.Forms.Button();
             this.btn_CadastroEntregadora = new System.Windows.Forms.Button();
             this.btn_CadastroEmpresaFabricante = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.btn_Sair = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
-            this.btn_CadastroDoadores = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).BeginInit();
@@ -115,6 +115,19 @@
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(200, 46);
             this.HomeContainer.TabIndex = 6;
+            // 
+            // btn_CadastroDoadores
+            // 
+            this.btn_CadastroDoadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
+            this.btn_CadastroDoadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CadastroDoadores.Location = new System.Drawing.Point(-25, 154);
+            this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
+            this.btn_CadastroDoadores.Size = new System.Drawing.Size(251, 40);
+            this.btn_CadastroDoadores.TabIndex = 7;
+            this.btn_CadastroDoadores.Text = "          Cadastro Doadores";
+            this.btn_CadastroDoadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_CadastroDoadores.UseVisualStyleBackColor = false;
+            this.btn_CadastroDoadores.Click += new System.EventHandler(this.btn_CadastroDoadores_Click);
             // 
             // btn_CadastroAlimentos
             // 
@@ -223,19 +236,6 @@
             // 
             this.HomeTimer.Interval = 5;
             this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
-            // 
-            // btn_CadastroDoadores
-            // 
-            this.btn_CadastroDoadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btn_CadastroDoadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroDoadores.Location = new System.Drawing.Point(-25, 154);
-            this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
-            this.btn_CadastroDoadores.Size = new System.Drawing.Size(251, 40);
-            this.btn_CadastroDoadores.TabIndex = 7;
-            this.btn_CadastroDoadores.Text = "          Cadastro Doadores";
-            this.btn_CadastroDoadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_CadastroDoadores.UseVisualStyleBackColor = false;
-            this.btn_CadastroDoadores.Click += new System.EventHandler(this.btn_CadastroDoadores_Click);
             // 
             // Frm_Menu
             // 
