@@ -45,6 +45,9 @@
             this.btn_Entrega = new System.Windows.Forms.Button();
             this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.btn_Sair = new System.Windows.Forms.Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).BeginInit();
@@ -137,6 +140,19 @@
             this.btn_CadastroDoadores.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
             this.btn_CadastroDoadores.Size = new System.Drawing.Size(188, 32);
+            this.btn_CadastroDoadores.TabIndex = 7;
+            this.btn_CadastroDoadores.Text = "          Cadastro Doadores";
+            this.btn_CadastroDoadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_CadastroDoadores.UseVisualStyleBackColor = false;
+            this.btn_CadastroDoadores.Click += new System.EventHandler(this.btn_CadastroDoadores_Click);
+            // 
+            // btn_CadastroDoadores
+            // 
+            this.btn_CadastroDoadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
+            this.btn_CadastroDoadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CadastroDoadores.Location = new System.Drawing.Point(-25, 154);
+            this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
+            this.btn_CadastroDoadores.Size = new System.Drawing.Size(251, 40);
             this.btn_CadastroDoadores.TabIndex = 7;
             this.btn_CadastroDoadores.Text = "          Cadastro Doadores";
             this.btn_CadastroDoadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,6 +267,26 @@
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
+            // 
+            // btn_Sair
+            // 
+            this.btn_Sair.Location = new System.Drawing.Point(689, 28);
+            this.btn_Sair.Name = "btn_Sair";
+            this.btn_Sair.Size = new System.Drawing.Size(75, 23);
+            this.btn_Sair.TabIndex = 1;
+            this.btn_Sair.Text = "Sair";
+            this.btn_Sair.UseVisualStyleBackColor = true;
+            this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Trick);
+            // 
+            // HomeTimer
+            // 
+            this.HomeTimer.Interval = 5;
+            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
             // 
             // Frm_Menu
             // 
