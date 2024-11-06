@@ -39,7 +39,6 @@ namespace PII2024_2
             EmpFab.Endereco = txt_EnderecoFabricante.Text;
             EmpFab.Telefone = txt_TelefoneFabricante.Text;
 
-            MessageBox.Show(EmpFab.Endereco);
             MessageBox.Show(EmpFab.NomeEmpresa);
         }
 

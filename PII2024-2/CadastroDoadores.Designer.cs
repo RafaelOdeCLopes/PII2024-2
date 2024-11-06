@@ -41,19 +41,17 @@
             this.lblContato.AutoSize = true;
             this.lblContato.BackColor = System.Drawing.Color.Transparent;
             this.lblContato.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContato.Location = new System.Drawing.Point(445, 170);
-            this.lblContato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContato.Location = new System.Drawing.Point(334, 138);
             this.lblContato.Name = "lblContato";
-            this.lblContato.Size = new System.Drawing.Size(72, 20);
+            this.lblContato.Size = new System.Drawing.Size(55, 16);
             this.lblContato.TabIndex = 17;
             this.lblContato.Text = "Telefone :";
             // 
             // TbContato
             // 
-            this.TbContato.Location = new System.Drawing.Point(449, 206);
-            this.TbContato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbContato.Location = new System.Drawing.Point(337, 167);
             this.TbContato.Name = "TbContato";
-            this.TbContato.Size = new System.Drawing.Size(204, 22);
+            this.TbContato.Size = new System.Drawing.Size(154, 20);
             this.TbContato.TabIndex = 13;
             // 
             // lblNome
@@ -61,10 +59,9 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(136, 170);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Location = new System.Drawing.Point(102, 138);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(125, 20);
+            this.lblNome.Size = new System.Drawing.Size(100, 16);
             this.lblNome.TabIndex = 12;
             this.lblNome.Text = "Nome do Doador:";
             // 
@@ -73,19 +70,17 @@
             this.lblCadastro.AutoSize = true;
             this.lblCadastro.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadastro.Location = new System.Drawing.Point(132, 82);
-            this.lblCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCadastro.Location = new System.Drawing.Point(99, 67);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(322, 31);
+            this.lblCadastro.Size = new System.Drawing.Size(257, 25);
             this.lblCadastro.TabIndex = 11;
             this.lblCadastro.Text = "Faça o cadastro do Doador:";
             // 
             // TbNome
             // 
-            this.TbNome.Location = new System.Drawing.Point(139, 209);
-            this.TbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbNome.Location = new System.Drawing.Point(104, 170);
             this.TbNome.Name = "TbNome";
-            this.TbNome.Size = new System.Drawing.Size(204, 22);
+            this.TbNome.Size = new System.Drawing.Size(154, 20);
             this.TbNome.TabIndex = 10;
             // 
             // btnSalvar
@@ -101,19 +96,17 @@
             // 
             // CadastroDoadores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(591, 330);
             this.Controls.Add(this.btnSalvar);
-            this.ClientSize = new System.Drawing.Size(788, 406);
             this.Controls.Add(this.lblContato);
             this.Controls.Add(this.TbContato);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblCadastro);
             this.Controls.Add(this.TbNome);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CadastroDoadores";
             this.Text = "CadastroDoadores";
             this.Controls.SetChildIndex(this.TbNome, 0);
@@ -122,11 +115,6 @@
             this.Controls.SetChildIndex(this.TbContato, 0);
             this.Controls.SetChildIndex(this.lblContato, 0);
             this.Controls.SetChildIndex(this.btnSalvar, 0);
-            this.Controls.SetChildIndex(this.TbNome, 0);
-            this.Controls.SetChildIndex(this.lblCadastro, 0);
-            this.Controls.SetChildIndex(this.lblNome, 0);
-            this.Controls.SetChildIndex(this.TbContato, 0);
-            this.Controls.SetChildIndex(this.lblContato, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
