@@ -110,6 +110,9 @@ namespace PII2024_2
 
         private void btn_CadastroEntregadora_Click(object sender, EventArgs e)
         {
+            CadastroEntregadora cadastroEntregadora = new CadastroEntregadora();
+            cadastroEntregadora.Show();
+            this.Close();
 
         }
 

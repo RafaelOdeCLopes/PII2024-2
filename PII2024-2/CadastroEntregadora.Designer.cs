@@ -1,6 +1,6 @@
 ﻿namespace PII2024_2
 {
-    partial class CadastroDoadores
+    partial class CadastroEntregadora
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.lblContato = new System.Windows.Forms.Label();
-            this.TbContato = new System.Windows.Forms.TextBox();
+            this.tbStatus = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCadastro = new System.Windows.Forms.Label();
-            this.TbNome = new System.Windows.Forms.TextBox();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -41,80 +41,76 @@
             this.lblContato.AutoSize = true;
             this.lblContato.BackColor = System.Drawing.Color.Transparent;
             this.lblContato.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContato.Location = new System.Drawing.Point(334, 138);
+            this.lblContato.Location = new System.Drawing.Point(182, 224);
             this.lblContato.Name = "lblContato";
-            this.lblContato.Size = new System.Drawing.Size(55, 16);
-            this.lblContato.TabIndex = 17;
-            this.lblContato.Text = "Telefone :";
+            this.lblContato.Size = new System.Drawing.Size(41, 16);
+            this.lblContato.TabIndex = 22;
+            this.lblContato.Text = "Status:";
             // 
-            // TbContato
+            // tbStatus
             // 
-            this.TbContato.Location = new System.Drawing.Point(337, 167);
-            this.TbContato.Name = "TbContato";
-            this.TbContato.Size = new System.Drawing.Size(154, 20);
-            this.TbContato.TabIndex = 13;
+            this.tbStatus.Location = new System.Drawing.Point(184, 243);
+            this.tbStatus.Name = "tbStatus";
+            this.tbStatus.Size = new System.Drawing.Size(154, 20);
+            this.tbStatus.TabIndex = 21;
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(102, 138);
+            this.lblNome.Location = new System.Drawing.Point(182, 158);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(100, 16);
-            this.lblNome.TabIndex = 12;
-            this.lblNome.Text = "Nome do Doador:";
+            this.lblNome.Size = new System.Drawing.Size(92, 16);
+            this.lblNome.TabIndex = 20;
+            this.lblNome.Text = "Data de Entrega:";
             // 
             // lblCadastro
             // 
             this.lblCadastro.AutoSize = true;
             this.lblCadastro.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadastro.Location = new System.Drawing.Point(99, 67);
+            this.lblCadastro.Location = new System.Drawing.Point(180, 99);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(257, 25);
-            this.lblCadastro.TabIndex = 11;
-            this.lblCadastro.Text = "Faça o cadastro do Doador:";
+            this.lblCadastro.Size = new System.Drawing.Size(195, 25);
+            this.lblCadastro.TabIndex = 19;
+            this.lblCadastro.Text = "Cadastro da Entrega:";
             // 
-            // TbNome
+            // dtpData
             // 
-            this.TbNome.Location = new System.Drawing.Point(104, 170);
-            this.TbNome.Name = "TbNome";
-            this.TbNome.Size = new System.Drawing.Size(154, 20);
-            this.TbNome.TabIndex = 10;
+            this.dtpData.Location = new System.Drawing.Point(184, 184);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(234, 20);
+            this.dtpData.TabIndex = 23;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(410, 260);
+            this.btnSalvar.Location = new System.Drawing.Point(470, 295);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(81, 35);
-            this.btnSalvar.TabIndex = 33;
+            this.btnSalvar.TabIndex = 34;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // CadastroDoadores
+            // CadastroEntregadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(591, 330);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
+            this.ClientSize = new System.Drawing.Size(593, 354);
             this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.dtpData);
             this.Controls.Add(this.lblContato);
-            this.Controls.Add(this.TbContato);
+            this.Controls.Add(this.tbStatus);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblCadastro);
-            this.Controls.Add(this.TbNome);
             this.DoubleBuffered = true;
-            this.Name = "CadastroDoadores";
-            this.Text = "CadastroDoadores";
-            this.Controls.SetChildIndex(this.TbNome, 0);
-            this.Controls.SetChildIndex(this.lblCadastro, 0);
-            this.Controls.SetChildIndex(this.lblNome, 0);
-            this.Controls.SetChildIndex(this.TbContato, 0);
-            this.Controls.SetChildIndex(this.lblContato, 0);
-            this.Controls.SetChildIndex(this.btnSalvar, 0);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "CadastroEntregadora";
+            this.Text = "CadastroEntregadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,10 +119,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblContato;
-        private System.Windows.Forms.TextBox TbContato;
+        private System.Windows.Forms.TextBox tbStatus;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblCadastro;
-        private System.Windows.Forms.TextBox TbNome;
+        private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Button btnSalvar;
     }
 }
