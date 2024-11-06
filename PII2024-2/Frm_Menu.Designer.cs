@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_Menu = new System.Windows.Forms.Label();
@@ -43,13 +45,21 @@
             this.btn_Entrega = new System.Windows.Forms.Button();
             this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).BeginInit();
             this.HomeContainer.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Trick);
+            // 
+            // HomeTimer
+            // 
+            this.HomeTimer.Interval = 5;
+            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
             // 
             // sidebar
             // 
@@ -65,7 +75,7 @@
             this.sidebar.MaximumSize = new System.Drawing.Size(150, 366);
             this.sidebar.MinimumSize = new System.Drawing.Size(55, 366);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(150, 366);
+            this.sidebar.Size = new System.Drawing.Size(56, 366);
             this.sidebar.TabIndex = 0;
             // 
             // panel1
@@ -241,16 +251,6 @@
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 10;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Trick);
-            // 
-            // HomeTimer
-            // 
-            this.HomeTimer.Interval = 5;
-            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
             // 
             // Frm_Menu
             // 
