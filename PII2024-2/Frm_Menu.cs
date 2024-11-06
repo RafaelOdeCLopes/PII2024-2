@@ -54,6 +54,9 @@ namespace PII2024_2
                     sidebarTimer.Stop();
 
                 }
+
+                //Garante que o sidebar fique na frente ao expandir
+                sidebar.BringToFront();
             }
             
         }
