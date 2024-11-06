@@ -34,6 +34,7 @@
             this.lbl_Menu = new System.Windows.Forms.Label();
             this.MenuButtom = new System.Windows.Forms.PictureBox();
             this.HomeContainer = new System.Windows.Forms.Panel();
+            this.btn_CadastroDoadores = new System.Windows.Forms.Button();
             this.btn_CadastroAlimentos = new System.Windows.Forms.Button();
             this.btn_CadastroEntregadora = new System.Windows.Forms.Button();
             this.btn_CadastroEmpresaFabricante = new System.Windows.Forms.Button();
@@ -41,10 +42,9 @@
             this.btn_Menu = new System.Windows.Forms.Button();
             this.btn_Entrega = new System.Windows.Forms.Button();
             this.btn_Pedidos = new System.Windows.Forms.Button();
-            this.btn_Sair = new System.Windows.Forms.Button();
+            this.btn_sair = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
-            this.btn_CadastroDoadores = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).BeginInit();
@@ -58,43 +58,45 @@
             this.sidebar.Controls.Add(this.HomeContainer);
             this.sidebar.Controls.Add(this.btn_Entrega);
             this.sidebar.Controls.Add(this.btn_Pedidos);
+            this.sidebar.Controls.Add(this.btn_sair);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(200, 450);
-            this.sidebar.MinimumSize = new System.Drawing.Size(73, 450);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.sidebar.MaximumSize = new System.Drawing.Size(150, 366);
+            this.sidebar.MinimumSize = new System.Drawing.Size(55, 366);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(73, 450);
+            this.sidebar.Size = new System.Drawing.Size(150, 366);
             this.sidebar.TabIndex = 0;
-            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.lbl_Menu);
             this.panel1.Controls.Add(this.MenuButtom);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(150, 81);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbl_Menu
             // 
             this.lbl_Menu.AutoSize = true;
-            this.lbl_Menu.Location = new System.Drawing.Point(84, 32);
+            this.lbl_Menu.Location = new System.Drawing.Point(63, 26);
+            this.lbl_Menu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Menu.Name = "lbl_Menu";
-            this.lbl_Menu.Size = new System.Drawing.Size(40, 16);
+            this.lbl_Menu.Size = new System.Drawing.Size(34, 13);
             this.lbl_Menu.TabIndex = 1;
             this.lbl_Menu.Text = "Menu";
-            this.lbl_Menu.Click += new System.EventHandler(this.lbl_Menu_Click);
             // 
             // MenuButtom
             // 
             this.MenuButtom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuButtom.Image = global::PII2024_2.Properties.Resources.menu_png;
-            this.MenuButtom.Location = new System.Drawing.Point(9, 9);
+            this.MenuButtom.Location = new System.Drawing.Point(7, 7);
+            this.MenuButtom.Margin = new System.Windows.Forms.Padding(2);
             this.MenuButtom.Name = "MenuButtom";
-            this.MenuButtom.Size = new System.Drawing.Size(54, 55);
+            this.MenuButtom.Size = new System.Drawing.Size(40, 45);
             this.MenuButtom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MenuButtom.TabIndex = 0;
             this.MenuButtom.TabStop = false;
@@ -109,20 +111,36 @@
             this.HomeContainer.Controls.Add(this.btn_CadastroEmpresaFabricante);
             this.HomeContainer.Controls.Add(this.btn_CadastroFamiliar);
             this.HomeContainer.Controls.Add(this.btn_Menu);
-            this.HomeContainer.Location = new System.Drawing.Point(3, 109);
-            this.HomeContainer.MaximumSize = new System.Drawing.Size(200, 229);
-            this.HomeContainer.MinimumSize = new System.Drawing.Size(200, 45);
+            this.HomeContainer.Location = new System.Drawing.Point(2, 87);
+            this.HomeContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.HomeContainer.MaximumSize = new System.Drawing.Size(150, 186);
+            this.HomeContainer.MinimumSize = new System.Drawing.Size(150, 37);
             this.HomeContainer.Name = "HomeContainer";
-            this.HomeContainer.Size = new System.Drawing.Size(200, 46);
+            this.HomeContainer.Size = new System.Drawing.Size(150, 37);
             this.HomeContainer.TabIndex = 6;
+            // 
+            // btn_CadastroDoadores
+            // 
+            this.btn_CadastroDoadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
+            this.btn_CadastroDoadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CadastroDoadores.Location = new System.Drawing.Point(-19, 125);
+            this.btn_CadastroDoadores.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
+            this.btn_CadastroDoadores.Size = new System.Drawing.Size(188, 32);
+            this.btn_CadastroDoadores.TabIndex = 7;
+            this.btn_CadastroDoadores.Text = "          Cadastro Doadores";
+            this.btn_CadastroDoadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_CadastroDoadores.UseVisualStyleBackColor = false;
+            this.btn_CadastroDoadores.Click += new System.EventHandler(this.btn_CadastroDoadores_Click);
             // 
             // btn_CadastroAlimentos
             // 
             this.btn_CadastroAlimentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroAlimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroAlimentos.Location = new System.Drawing.Point(-22, 192);
+            this.btn_CadastroAlimentos.Location = new System.Drawing.Point(-16, 156);
+            this.btn_CadastroAlimentos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroAlimentos.Name = "btn_CadastroAlimentos";
-            this.btn_CadastroAlimentos.Size = new System.Drawing.Size(251, 40);
+            this.btn_CadastroAlimentos.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroAlimentos.TabIndex = 6;
             this.btn_CadastroAlimentos.Text = "          Cadastro Alimentos";
             this.btn_CadastroAlimentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,9 +151,10 @@
             // 
             this.btn_CadastroEntregadora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroEntregadora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroEntregadora.Location = new System.Drawing.Point(-25, 120);
+            this.btn_CadastroEntregadora.Location = new System.Drawing.Point(-19, 98);
+            this.btn_CadastroEntregadora.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroEntregadora.Name = "btn_CadastroEntregadora";
-            this.btn_CadastroEntregadora.Size = new System.Drawing.Size(251, 40);
+            this.btn_CadastroEntregadora.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroEntregadora.TabIndex = 4;
             this.btn_CadastroEntregadora.Text = "           Cadastro Entregadora";
             this.btn_CadastroEntregadora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,9 +165,10 @@
             // 
             this.btn_CadastroEmpresaFabricante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroEmpresaFabricante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroEmpresaFabricante.Location = new System.Drawing.Point(-25, 84);
+            this.btn_CadastroEmpresaFabricante.Location = new System.Drawing.Point(-19, 68);
+            this.btn_CadastroEmpresaFabricante.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroEmpresaFabricante.Name = "btn_CadastroEmpresaFabricante";
-            this.btn_CadastroEmpresaFabricante.Size = new System.Drawing.Size(251, 40);
+            this.btn_CadastroEmpresaFabricante.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroEmpresaFabricante.TabIndex = 3;
             this.btn_CadastroEmpresaFabricante.Text = "           Cadastro Fabricante";
             this.btn_CadastroEmpresaFabricante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,9 +179,10 @@
             // 
             this.btn_CadastroFamiliar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroFamiliar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroFamiliar.Location = new System.Drawing.Point(-23, 47);
+            this.btn_CadastroFamiliar.Location = new System.Drawing.Point(-17, 38);
+            this.btn_CadastroFamiliar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroFamiliar.Name = "btn_CadastroFamiliar";
-            this.btn_CadastroFamiliar.Size = new System.Drawing.Size(251, 40);
+            this.btn_CadastroFamiliar.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroFamiliar.TabIndex = 2;
             this.btn_CadastroFamiliar.Text = "           Cadastro Familiar";
             this.btn_CadastroFamiliar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,9 +193,10 @@
             // 
             this.btn_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(119)))), ((int)(((byte)(10)))));
             this.btn_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Menu.Location = new System.Drawing.Point(-22, 0);
+            this.btn_Menu.Location = new System.Drawing.Point(-16, 0);
+            this.btn_Menu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Menu.Name = "btn_Menu";
-            this.btn_Menu.Size = new System.Drawing.Size(251, 49);
+            this.btn_Menu.Size = new System.Drawing.Size(188, 40);
             this.btn_Menu.TabIndex = 1;
             this.btn_Menu.Text = "Cadastros";
             this.btn_Menu.UseVisualStyleBackColor = false;
@@ -185,9 +207,10 @@
             this.btn_Entrega.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Entrega.FlatAppearance.BorderSize = 0;
             this.btn_Entrega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Entrega.Location = new System.Drawing.Point(3, 161);
+            this.btn_Entrega.Location = new System.Drawing.Point(2, 128);
+            this.btn_Entrega.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Entrega.Name = "btn_Entrega";
-            this.btn_Entrega.Size = new System.Drawing.Size(200, 76);
+            this.btn_Entrega.Size = new System.Drawing.Size(150, 62);
             this.btn_Entrega.TabIndex = 5;
             this.btn_Entrega.Text = "Entrega";
             this.btn_Entrega.UseVisualStyleBackColor = false;
@@ -197,22 +220,27 @@
             this.btn_Pedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Pedidos.FlatAppearance.BorderSize = 0;
             this.btn_Pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Pedidos.Location = new System.Drawing.Point(3, 243);
+            this.btn_Pedidos.Location = new System.Drawing.Point(2, 194);
+            this.btn_Pedidos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Pedidos.Name = "btn_Pedidos";
-            this.btn_Pedidos.Size = new System.Drawing.Size(200, 76);
+            this.btn_Pedidos.Size = new System.Drawing.Size(150, 62);
             this.btn_Pedidos.TabIndex = 4;
             this.btn_Pedidos.Text = "Pedidos";
             this.btn_Pedidos.UseVisualStyleBackColor = false;
             // 
-            // btn_Sair
+            // btn_sair
             // 
-            this.btn_Sair.Location = new System.Drawing.Point(689, 28);
-            this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(75, 23);
-            this.btn_Sair.TabIndex = 1;
-            this.btn_Sair.Text = "Sair";
-            this.btn_Sair.UseVisualStyleBackColor = true;
-            this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
+            this.btn_sair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_sair.FlatAppearance.BorderSize = 0;
+            this.btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sair.Location = new System.Drawing.Point(2, 260);
+            this.btn_sair.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_sair.Name = "btn_sair";
+            this.btn_sair.Size = new System.Drawing.Size(150, 61);
+            this.btn_sair.TabIndex = 5;
+            this.btn_sair.Text = "Sair";
+            this.btn_sair.UseVisualStyleBackColor = false;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
             // 
             // sidebarTimer
             // 
@@ -224,28 +252,15 @@
             this.HomeTimer.Interval = 5;
             this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
             // 
-            // btn_CadastroDoadores
-            // 
-            this.btn_CadastroDoadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btn_CadastroDoadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroDoadores.Location = new System.Drawing.Point(-25, 154);
-            this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
-            this.btn_CadastroDoadores.Size = new System.Drawing.Size(251, 40);
-            this.btn_CadastroDoadores.TabIndex = 7;
-            this.btn_CadastroDoadores.Text = "          Cadastro Doadores";
-            this.btn_CadastroDoadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_CadastroDoadores.UseVisualStyleBackColor = false;
-            this.btn_CadastroDoadores.Click += new System.EventHandler(this.btn_CadastroDoadores_Click);
-            // 
             // Frm_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_Sair);
+            this.ClientSize = new System.Drawing.Size(600, 367);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -268,7 +283,6 @@
         private System.Windows.Forms.Button btn_Entrega;
         private System.Windows.Forms.PictureBox MenuButtom;
         private System.Windows.Forms.Label lbl_Menu;
-        private System.Windows.Forms.Button btn_Sair;
         private System.Windows.Forms.Timer sidebarTimer;
         private System.Windows.Forms.Panel HomeContainer;
         private System.Windows.Forms.Button btn_CadastroFamiliar;
@@ -277,5 +291,7 @@
         private System.Windows.Forms.Button btn_CadastroEmpresaFabricante;
         private System.Windows.Forms.Button btn_CadastroAlimentos;
         private System.Windows.Forms.Button btn_CadastroDoadores;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btn_sair;
     }
 }
