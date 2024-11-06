@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.lblContato = new System.Windows.Forms.Label();
-            this.TbContato = new System.Windows.Forms.TextBox();
+            this.txt_Contato = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCadastro = new System.Windows.Forms.Label();
-            this.TbNome = new System.Windows.Forms.TextBox();
+            this.txt_NomeDoador = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -48,13 +48,13 @@
             this.lblContato.TabIndex = 17;
             this.lblContato.Text = "Telefone :";
             // 
-            // TbContato
+            // txt_Contato
             // 
-            this.TbContato.Location = new System.Drawing.Point(449, 206);
-            this.TbContato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TbContato.Name = "TbContato";
-            this.TbContato.Size = new System.Drawing.Size(204, 22);
-            this.TbContato.TabIndex = 13;
+            this.txt_Contato.Location = new System.Drawing.Point(449, 206);
+            this.txt_Contato.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Contato.Name = "txt_Contato";
+            this.txt_Contato.Size = new System.Drawing.Size(204, 22);
+            this.txt_Contato.TabIndex = 13;
             // 
             // lblNome
             // 
@@ -80,13 +80,14 @@
             this.lblCadastro.TabIndex = 11;
             this.lblCadastro.Text = "Faça o cadastro do Doador:";
             // 
-            // TbNome
+            // txt_NomeDoador
             // 
-            this.TbNome.Location = new System.Drawing.Point(139, 209);
-            this.TbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TbNome.Name = "TbNome";
-            this.TbNome.Size = new System.Drawing.Size(204, 22);
-            this.TbNome.TabIndex = 10;
+            this.txt_NomeDoador.Location = new System.Drawing.Point(139, 209);
+            this.txt_NomeDoador.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NomeDoador.Name = "txt_NomeDoador";
+            this.txt_NomeDoador.Size = new System.Drawing.Size(204, 22);
+            this.txt_NomeDoador.TabIndex = 10;
+            this.txt_NomeDoador.TextChanged += new System.EventHandler(this.TbNome_TextChanged);
             // 
             // btnSalvar
             // 
@@ -98,34 +99,29 @@
             this.btnSalvar.TabIndex = 33;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // CadastroDoadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(591, 330);
-            this.Controls.Add(this.btnSalvar);
             this.ClientSize = new System.Drawing.Size(788, 406);
             this.Controls.Add(this.lblContato);
-            this.Controls.Add(this.TbContato);
+            this.Controls.Add(this.txt_Contato);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblCadastro);
-            this.Controls.Add(this.TbNome);
+            this.Controls.Add(this.txt_NomeDoador);
+            this.Controls.Add(this.btnSalvar);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadastroDoadores";
             this.Text = "CadastroDoadores";
-            this.Controls.SetChildIndex(this.TbNome, 0);
-            this.Controls.SetChildIndex(this.lblCadastro, 0);
-            this.Controls.SetChildIndex(this.lblNome, 0);
-            this.Controls.SetChildIndex(this.TbContato, 0);
-            this.Controls.SetChildIndex(this.lblContato, 0);
             this.Controls.SetChildIndex(this.btnSalvar, 0);
-            this.Controls.SetChildIndex(this.TbNome, 0);
+            this.Controls.SetChildIndex(this.txt_NomeDoador, 0);
             this.Controls.SetChildIndex(this.lblCadastro, 0);
             this.Controls.SetChildIndex(this.lblNome, 0);
-            this.Controls.SetChildIndex(this.TbContato, 0);
+            this.Controls.SetChildIndex(this.txt_Contato, 0);
             this.Controls.SetChildIndex(this.lblContato, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -135,10 +131,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblContato;
-        private System.Windows.Forms.TextBox TbContato;
+        private System.Windows.Forms.TextBox txt_Contato;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblCadastro;
-        private System.Windows.Forms.TextBox TbNome;
+        private System.Windows.Forms.TextBox txt_NomeDoador;
         private System.Windows.Forms.Button btnSalvar;
     }
 }
