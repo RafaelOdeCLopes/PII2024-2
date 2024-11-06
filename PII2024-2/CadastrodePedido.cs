@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class FrmCadastro : Frm_Menu
+    public partial class Pedido : Frm_Menu
     {
-        public FrmCadastro()
+        public Pedido()
         {
             InitializeComponent();
-        }
-
-        private void lblCadastro_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

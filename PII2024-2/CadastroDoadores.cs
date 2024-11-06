@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class CadastroDoadores : Form
+    public partial class CadastroDoadores : Frm_Menu
     {
         public CadastroDoadores()
         {

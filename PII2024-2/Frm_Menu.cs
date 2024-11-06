@@ -13,6 +13,7 @@ namespace PII2024_2
     public partial class Frm_Menu : Form
     {
         bool sidebarExpand;
+        bool homeCollapsed;
         public Frm_Menu()
         {
             InitializeComponent();
@@ -74,6 +75,67 @@ namespace PII2024_2
         private void lbl_Menu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void HomeTimer_Tick(object sender, EventArgs e)
+        {
+            if (homeCollapsed)
+            {
+                HomeContainer.Height += 10;
+                if (HomeContainer.Height == HomeContainer.MaximumSize.Height)
+                {
+                    homeCollapsed = false;
+                    HomeTimer.Stop();
+                }
+
+            }else
+            {
+                HomeContainer.Height -= 10;
+                if(HomeContainer.Height == HomeContainer.MinimumSize.Height)
+                {
+                    homeCollapsed = true;
+                    HomeTimer.Stop();
+                }
+            }
+        }
+
+        private void btn_Menu_Click(object sender, EventArgs e)
+        {
+
+            HomeTimer.Start();
+        }
+
+        private void btn_CadastroFamiliar_Click(object sender, EventArgs e)
+        {
+           FrmCadastro cadastroFamilia = new FrmCadastro();
+            cadastroFamilia.Show();
+            this.Close();
+        }
+
+        private void btn_CadastroEmpresaFabricante_Click(object sender, EventArgs e)
+        {
+            Cadastro_EmpresaFabricante cadastroEmpresa = new Cadastro_EmpresaFabricante();
+            cadastroEmpresa.Show();
+            this.Close();
+        }
+
+        private void btn_CadastroEntregadora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CadastroDoadores_Click(object sender, EventArgs e)
+        {
+            CadastroDoadores cadastroDoadores = new CadastroDoadores();
+            cadastroDoadores.Show();
+            this.Close();
+        }
+
+        private void btn_CadastroAlimentos_Click(object sender, EventArgs e)
+        {
+            CadastroAlimentos cadastroAlimentos = new CadastroAlimentos();
+            cadastroAlimentos.Show();
+            this.Close();
         }
     }
 }

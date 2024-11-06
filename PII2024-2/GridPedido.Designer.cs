@@ -37,46 +37,43 @@
             // DgvPedido
             // 
             this.DgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvPedido.Location = new System.Drawing.Point(123, 126);
-            this.DgvPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvPedido.Location = new System.Drawing.Point(92, 102);
             this.DgvPedido.Name = "DgvPedido";
             this.DgvPedido.RowHeadersWidth = 51;
-            this.DgvPedido.Size = new System.Drawing.Size(489, 316);
+            this.DgvPedido.Size = new System.Drawing.Size(367, 257);
             this.DgvPedido.TabIndex = 0;
             // 
             // CbPedido
             // 
             this.CbPedido.FormattingEnabled = true;
-            this.CbPedido.Location = new System.Drawing.Point(123, 70);
-            this.CbPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CbPedido.Location = new System.Drawing.Point(92, 57);
             this.CbPedido.Name = "CbPedido";
-            this.CbPedido.Size = new System.Drawing.Size(488, 24);
+            this.CbPedido.Size = new System.Drawing.Size(367, 21);
             this.CbPedido.TabIndex = 1;
+            this.CbPedido.SelectedIndexChanged += new System.EventHandler(this.CbPedido_SelectedIndexChanged);
             // 
             // lblPedido
             // 
             this.lblPedido.AutoSize = true;
             this.lblPedido.BackColor = System.Drawing.Color.Transparent;
             this.lblPedido.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPedido.Location = new System.Drawing.Point(195, 11);
-            this.lblPedido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPedido.Location = new System.Drawing.Point(146, 9);
             this.lblPedido.Name = "lblPedido";
-            this.lblPedido.Size = new System.Drawing.Size(315, 31);
+            this.lblPedido.Size = new System.Drawing.Size(251, 25);
             this.lblPedido.TabIndex = 3;
             this.lblPedido.Text = "Faça a consulta de pedido :";
             // 
             // GridPedido
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PII2024_2.Properties.Resources.Design_sem_nome__4_;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.lblPedido);
             this.Controls.Add(this.CbPedido);
             this.Controls.Add(this.DgvPedido);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GridPedido";
             this.Text = "Consulta de pedidos";
             ((System.ComponentModel.ISupportInitialize)(this.DgvPedido)).EndInit();

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class Cadastro_EmpresaFabricante : Form
+    public partial class Cadastro_EmpresaFabricante : Frm_Menu
     {
         public Cadastro_EmpresaFabricante()
         {

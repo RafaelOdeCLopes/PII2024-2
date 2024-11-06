@@ -99,6 +99,18 @@
     <Compile Include="EmpresasFabricantes.cs" />
     <Compile Include="Entregas.cs" />
     <Compile Include="Familias.cs" />
+    <Compile Include="CadastroAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroAlimentos.Designer.cs">
+      <DependentUpon>CadastroAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrodePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrodePedido.Designer.cs">
+      <DependentUpon>CadastrodePedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroAlimentos.resx">
+      <DependentUpon>CadastroAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrodePedido.resx">
+      <DependentUpon>CadastrodePedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Menu.resx">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
