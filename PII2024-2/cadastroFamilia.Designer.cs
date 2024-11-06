@@ -42,7 +42,7 @@
             // 
             // TbNome
             // 
-            this.TbNome.Location = new System.Drawing.Point(140, 182);
+            this.TbNome.Location = new System.Drawing.Point(139, 179);
             this.TbNome.Margin = new System.Windows.Forms.Padding(4);
             this.TbNome.Name = "TbNome";
             this.TbNome.Size = new System.Drawing.Size(204, 22);
@@ -66,7 +66,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(137, 143);
+            this.lblNome.Location = new System.Drawing.Point(136, 143);
             this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(138, 20);
@@ -83,7 +83,7 @@
             // 
             // TbEndereco
             // 
-            this.TbEndereco.Location = new System.Drawing.Point(140, 272);
+            this.TbEndereco.Location = new System.Drawing.Point(139, 261);
             this.TbEndereco.Margin = new System.Windows.Forms.Padding(4);
             this.TbEndereco.Name = "TbEndereco";
             this.TbEndereco.Size = new System.Drawing.Size(204, 22);
@@ -102,7 +102,7 @@
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.BackColor = System.Drawing.Color.Transparent;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco.Location = new System.Drawing.Point(136, 238);
+            this.lblEndereco.Location = new System.Drawing.Point(136, 227);
             this.lblEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(77, 20);

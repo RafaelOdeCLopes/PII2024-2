@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.btnSalvarcadastroalimentos = new System.Windows.Forms.Button();
-            this.cmbDocao = new System.Windows.Forms.ComboBox();
+            this.cmbDoacao = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbEmpresa = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtOrigem = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.mtbdata = new System.Windows.Forms.MaskedTextBox();
@@ -44,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbOrigem = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnSalvarcadastroalimentos
@@ -55,14 +55,15 @@
             this.btnSalvarcadastroalimentos.TabIndex = 32;
             this.btnSalvarcadastroalimentos.Text = "SALVAR";
             this.btnSalvarcadastroalimentos.UseVisualStyleBackColor = true;
+            this.btnSalvarcadastroalimentos.Click += new System.EventHandler(this.btnSalvarcadastroalimentos_Click);
             // 
-            // cmbDocao
+            // cmbDoacao
             // 
-            this.cmbDocao.FormattingEnabled = true;
-            this.cmbDocao.Location = new System.Drawing.Point(305, 316);
-            this.cmbDocao.Name = "cmbDocao";
-            this.cmbDocao.Size = new System.Drawing.Size(287, 24);
-            this.cmbDocao.TabIndex = 31;
+            this.cmbDoacao.FormattingEnabled = true;
+            this.cmbDoacao.Location = new System.Drawing.Point(305, 316);
+            this.cmbDoacao.Name = "cmbDoacao";
+            this.cmbDoacao.Size = new System.Drawing.Size(287, 24);
+            this.cmbDoacao.TabIndex = 31;
             // 
             // label8
             // 
@@ -91,13 +92,6 @@
             this.label7.Size = new System.Drawing.Size(200, 27);
             this.label7.TabIndex = 28;
             this.label7.Text = "Empresa fabricante:";
-            // 
-            // txtOrigem
-            // 
-            this.txtOrigem.Location = new System.Drawing.Point(305, 256);
-            this.txtOrigem.Name = "txtOrigem";
-            this.txtOrigem.Size = new System.Drawing.Size(287, 22);
-            this.txtOrigem.TabIndex = 27;
             // 
             // label6
             // 
@@ -189,18 +183,29 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Nome:";
             // 
+            // cmbOrigem
+            // 
+            this.cmbOrigem.FormattingEnabled = true;
+            this.cmbOrigem.Items.AddRange(new object[] {
+            "Compra",
+            "Doação"});
+            this.cmbOrigem.Location = new System.Drawing.Point(305, 251);
+            this.cmbOrigem.Name = "cmbOrigem";
+            this.cmbOrigem.Size = new System.Drawing.Size(287, 24);
+            this.cmbOrigem.TabIndex = 33;
+            // 
             // CadastroAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbOrigem);
             this.Controls.Add(this.btnSalvarcadastroalimentos);
-            this.Controls.Add(this.cmbDocao);
+            this.Controls.Add(this.cmbDoacao);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cmbEmpresa);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtOrigem);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.mtbdata);
@@ -223,12 +228,12 @@
             this.Controls.SetChildIndex(this.mtbdata, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.label6, 0);
-            this.Controls.SetChildIndex(this.txtOrigem, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.cmbEmpresa, 0);
             this.Controls.SetChildIndex(this.label8, 0);
-            this.Controls.SetChildIndex(this.cmbDocao, 0);
+            this.Controls.SetChildIndex(this.cmbDoacao, 0);
             this.Controls.SetChildIndex(this.btnSalvarcadastroalimentos, 0);
+            this.Controls.SetChildIndex(this.cmbOrigem, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,11 +242,10 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalvarcadastroalimentos;
-        private System.Windows.Forms.ComboBox cmbDocao;
+        private System.Windows.Forms.ComboBox cmbDoacao;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbEmpresa;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtOrigem;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox mtbdata;
@@ -252,5 +256,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbOrigem;
     }
 }
