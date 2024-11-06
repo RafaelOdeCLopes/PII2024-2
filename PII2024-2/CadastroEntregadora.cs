@@ -10,15 +10,16 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class CadastroAlimentos : Frm_Menu
+    public partial class CadastroEntregadora : Frm_Menu
     {
-        bool sidebarExpand;
-        bool homeCollapsed;
-        public CadastroAlimentos()
+        public CadastroEntregadora()
         {
             InitializeComponent();
         }
 
-      
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
