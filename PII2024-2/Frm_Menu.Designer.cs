@@ -45,7 +45,6 @@
             this.btn_Entrega = new System.Windows.Forms.Button();
             this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
-            this.btn_Sair = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
@@ -268,16 +267,6 @@
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
             // 
-            // btn_Sair
-            // 
-            this.btn_Sair.Location = new System.Drawing.Point(689, 28);
-            this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(75, 23);
-            this.btn_Sair.TabIndex = 1;
-            this.btn_Sair.Text = "Sair";
-            this.btn_Sair.UseVisualStyleBackColor = true;
-            this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
-            // 
             // sidebarTimer
             // 
             this.sidebarTimer.Interval = 10;
@@ -327,7 +316,6 @@
         private System.Windows.Forms.Button btn_CadastroEmpresaFabricante;
         private System.Windows.Forms.Button btn_CadastroAlimentos;
         private System.Windows.Forms.Button btn_CadastroDoadores;
-        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btn_sair;
     }
 }
