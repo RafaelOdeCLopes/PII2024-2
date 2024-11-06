@@ -14,9 +14,15 @@ namespace PII2024_2
     {
         bool sidebarExpand;
         bool homeCollapsed;
+
+      
         public Frm_Menu()
         {
             InitializeComponent();
+
+
+
+
         }
 
        
@@ -57,25 +63,9 @@ namespace PII2024_2
             sidebarTimer.Start();
         }
 
-        private void btn_Sair_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
-        private void sidebar_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbl_Menu_Click(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void HomeTimer_Tick(object sender, EventArgs e)
         {
@@ -101,7 +91,6 @@ namespace PII2024_2
 
         private void btn_Menu_Click(object sender, EventArgs e)
         {
-
             HomeTimer.Start();
         }
 
@@ -137,5 +126,14 @@ namespace PII2024_2
             cadastroAlimentos.Show();
             this.Close();
         }
+
+      
+
+        private void btn_sair_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+     
     }
 }
