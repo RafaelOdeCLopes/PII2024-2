@@ -137,6 +137,20 @@ namespace PII2024_2
             Application.Exit();
         }
 
-     
+        private void btn_Entrega_Click(object sender, EventArgs e)
+        {
+            GridConsulta gridConsultaForm = new GridConsulta();
+
+            
+            gridConsultaForm.Show();
+        }
+
+        private void btn_Pedidos_Click(object sender, EventArgs e)
+        {
+            GridPedido gridPedidoForm = new GridPedido();
+
+            // Exibe o formulário como uma janela separada
+            gridPedidoForm.Show();
+        }
     }
 }

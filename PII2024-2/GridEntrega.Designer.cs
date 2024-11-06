@@ -76,9 +76,11 @@
             this.Controls.Add(this.DgvEntrega);
             this.DoubleBuffered = true;
             this.Name = "GridConsulta";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de entrega";
             this.Load += new System.EventHandler(this.GridConsulta_Load);
+            this.Controls.SetChildIndex(this.DgvEntrega, 0);
+            this.Controls.SetChildIndex(this.CbEntrega, 0);
+            this.Controls.SetChildIndex(this.lblEntrega, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DgvEntrega)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
