@@ -54,6 +54,7 @@ namespace PII2024_2
                     sidebarTimer.Stop();
 
                 }
+                sidebar.BringToFront();
             }
             
         }
