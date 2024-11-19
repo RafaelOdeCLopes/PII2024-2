@@ -25,7 +25,7 @@ namespace PII2024_2
             sql.Conectar();
 
             // Preencher cmbEmpresa com os nomes das empresas fabricantes
-            using (SqlCommand cmd = new SqlCommand("SELECT id_empresa_fabricante, nome_empresa FROM empresas_fabricantes", sql.Conn))
+            using (SqlCommand cmd = new SqlCommand("SELECT id, nome_empresa FROM empresas_fabricantes", sql.Conn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -33,15 +33,15 @@ namespace PII2024_2
                     dtEmpresa.Load(reader);
                     cmbEmpresa.DataSource = dtEmpresa;
                     cmbEmpresa.DisplayMember = "nome_empresa"; // Exibe o nome da empresa
-                    cmbEmpresa.ValueMember = "id_empresa_fabricante"; // Armazena a chave primária
+                    cmbEmpresa.ValueMember = "id"; // Armazena a chave primária
                 }
             }
 
             // Preencher cmbDoacao com os nomes dos doadores
             using (SqlCommand cmd = new SqlCommand(@"
-                SELECT d.id_doador, d.nome 
+                SELECT d.id, d.nome 
                 FROM doacoes AS do
-                INNER JOIN doadores AS d ON do.id_doador = d.id_doador", sql.Conn))
+                INNER JOIN doadores AS d ON do.id = d.id", sql.Conn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -49,7 +49,7 @@ namespace PII2024_2
                     dtDoacao.Load(reader);
                     cmbDoacao.DataSource = dtDoacao;
                     cmbDoacao.DisplayMember = "nome"; // Exibe o nome do doador
-                    cmbDoacao.ValueMember = "id_doador"; // Armazena a chave primária
+                    cmbDoacao.ValueMember = "id"; // Armazena a chave primária
                 }
             }
         }
