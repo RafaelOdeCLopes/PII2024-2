@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TbNome = new System.Windows.Forms.TextBox();
+            this.txt_NomeResponsavel = new System.Windows.Forms.TextBox();
             this.lblCadastro = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.TbTelefone = new System.Windows.Forms.TextBox();
-            this.TbEndereco = new System.Windows.Forms.TextBox();
-            this.TbMembros = new System.Windows.Forms.TextBox();
+            this.txt_Telefone = new System.Windows.Forms.TextBox();
+            this.txt_Endereco = new System.Windows.Forms.TextBox();
             this.lblEndereco = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblMembros = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_salvar = new System.Windows.Forms.Button();
+            this.Nud_NumeroMembros = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_NumeroMembros)).BeginInit();
             this.SuspendLayout();
             // 
-            // TbNome
+            // txt_NomeResponsavel
             // 
-            this.TbNome.Location = new System.Drawing.Point(140, 182);
-            this.TbNome.Margin = new System.Windows.Forms.Padding(4);
-            this.TbNome.Name = "TbNome";
-            this.TbNome.Size = new System.Drawing.Size(204, 22);
-            this.TbNome.TabIndex = 0;
+            this.txt_NomeResponsavel.Location = new System.Drawing.Point(140, 182);
+            this.txt_NomeResponsavel.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NomeResponsavel.Name = "txt_NomeResponsavel";
+            this.txt_NomeResponsavel.Size = new System.Drawing.Size(204, 22);
+            this.txt_NomeResponsavel.TabIndex = 0;
             // 
             // lblCadastro
             // 
@@ -73,29 +75,21 @@
             this.lblNome.TabIndex = 3;
             this.lblNome.Text = "Nome Responsável :";
             // 
-            // TbTelefone
+            // txt_Telefone
             // 
-            this.TbTelefone.Location = new System.Drawing.Point(450, 179);
-            this.TbTelefone.Margin = new System.Windows.Forms.Padding(4);
-            this.TbTelefone.Name = "TbTelefone";
-            this.TbTelefone.Size = new System.Drawing.Size(204, 22);
-            this.TbTelefone.TabIndex = 4;
+            this.txt_Telefone.Location = new System.Drawing.Point(450, 179);
+            this.txt_Telefone.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Telefone.Name = "txt_Telefone";
+            this.txt_Telefone.Size = new System.Drawing.Size(204, 22);
+            this.txt_Telefone.TabIndex = 4;
             // 
-            // TbEndereco
+            // txt_Endereco
             // 
-            this.TbEndereco.Location = new System.Drawing.Point(140, 272);
-            this.TbEndereco.Margin = new System.Windows.Forms.Padding(4);
-            this.TbEndereco.Name = "TbEndereco";
-            this.TbEndereco.Size = new System.Drawing.Size(204, 22);
-            this.TbEndereco.TabIndex = 5;
-            // 
-            // TbMembros
-            // 
-            this.TbMembros.Location = new System.Drawing.Point(450, 261);
-            this.TbMembros.Margin = new System.Windows.Forms.Padding(4);
-            this.TbMembros.Name = "TbMembros";
-            this.TbMembros.Size = new System.Drawing.Size(204, 22);
-            this.TbMembros.TabIndex = 6;
+            this.txt_Endereco.Location = new System.Drawing.Point(140, 272);
+            this.txt_Endereco.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Endereco.Name = "txt_Endereco";
+            this.txt_Endereco.Size = new System.Drawing.Size(204, 22);
+            this.txt_Endereco.TabIndex = 5;
             // 
             // lblEndereco
             // 
@@ -126,7 +120,7 @@
             this.lblMembros.AutoSize = true;
             this.lblMembros.BackColor = System.Drawing.Color.Transparent;
             this.lblMembros.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMembros.Location = new System.Drawing.Point(446, 227);
+            this.lblMembros.Location = new System.Drawing.Point(447, 238);
             this.lblMembros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMembros.Name = "lblMembros";
             this.lblMembros.Size = new System.Drawing.Size(117, 20);
@@ -144,6 +138,23 @@
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btn_salvar
+            // 
+            this.btn_salvar.Location = new System.Drawing.Point(356, 363);
+            this.btn_salvar.Name = "btn_salvar";
+            this.btn_salvar.Size = new System.Drawing.Size(75, 23);
+            this.btn_salvar.TabIndex = 11;
+            this.btn_salvar.Text = "Salvar";
+            this.btn_salvar.UseVisualStyleBackColor = true;
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
+            // 
+            // Nud_NumeroMembros
+            // 
+            this.Nud_NumeroMembros.Location = new System.Drawing.Point(450, 272);
+            this.Nud_NumeroMembros.Name = "Nud_NumeroMembros";
+            this.Nud_NumeroMembros.Size = new System.Drawing.Size(204, 22);
+            this.Nud_NumeroMembros.TabIndex = 12;
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -151,30 +162,33 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Nud_NumeroMembros);
+            this.Controls.Add(this.btn_salvar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblMembros);
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.lblEndereco);
-            this.Controls.Add(this.TbMembros);
-            this.Controls.Add(this.TbEndereco);
-            this.Controls.Add(this.TbTelefone);
+            this.Controls.Add(this.txt_Endereco);
+            this.Controls.Add(this.txt_Telefone);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblCadastro);
-            this.Controls.Add(this.TbNome);
+            this.Controls.Add(this.txt_NomeResponsavel);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCadastro";
             this.Text = "Cadastro";
-            this.Controls.SetChildIndex(this.TbNome, 0);
+            this.Controls.SetChildIndex(this.txt_NomeResponsavel, 0);
             this.Controls.SetChildIndex(this.lblCadastro, 0);
             this.Controls.SetChildIndex(this.lblNome, 0);
-            this.Controls.SetChildIndex(this.TbTelefone, 0);
-            this.Controls.SetChildIndex(this.TbEndereco, 0);
-            this.Controls.SetChildIndex(this.TbMembros, 0);
+            this.Controls.SetChildIndex(this.txt_Telefone, 0);
+            this.Controls.SetChildIndex(this.txt_Endereco, 0);
             this.Controls.SetChildIndex(this.lblEndereco, 0);
             this.Controls.SetChildIndex(this.lblTelefone, 0);
             this.Controls.SetChildIndex(this.lblMembros, 0);
             this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btn_salvar, 0);
+            this.Controls.SetChildIndex(this.Nud_NumeroMembros, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_NumeroMembros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,15 +196,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox TbNome;
+        private System.Windows.Forms.TextBox txt_NomeResponsavel;
         private System.Windows.Forms.Label lblCadastro;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.TextBox TbTelefone;
-        private System.Windows.Forms.TextBox TbEndereco;
-        private System.Windows.Forms.TextBox TbMembros;
+        private System.Windows.Forms.TextBox txt_Telefone;
+        private System.Windows.Forms.TextBox txt_Endereco;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblMembros;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_salvar;
+        private System.Windows.Forms.NumericUpDown Nud_NumeroMembros;
     }
 }
