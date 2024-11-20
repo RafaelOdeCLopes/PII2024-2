@@ -1,6 +1,6 @@
 ﻿namespace PII2024_2
 {
-    partial class Form1
+    partial class CadastroEmpresaEntregadora
     {
         /// <summary>
         /// Variável de designer necessária.
