@@ -15,6 +15,13 @@ namespace PII2024_2
         public Pedido()
         {
             InitializeComponent();
+            SQLServer sql = new SQLServer();
+            sql.Conectar();
+        }
+
+        private void Pedido_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
