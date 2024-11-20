@@ -14,6 +14,8 @@ namespace PII2024_2
     {
         bool sidebarExpand;
         bool homeCollapsed;
+        bool EntregaCollapsed;
+        bool PedidoCollapsed;
 
       
         public Frm_Menu()
@@ -135,7 +137,6 @@ namespace PII2024_2
         }
 
       
-
         private void btn_sair_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
@@ -143,18 +144,63 @@ namespace PII2024_2
 
         private void btn_Entrega_Click(object sender, EventArgs e)
         {
-            GridConsulta gridConsultaForm = new GridConsulta();
-
-            
-            gridConsultaForm.Show();
+            Entrega_Timer.Start();
         }
 
         private void btn_Pedidos_Click(object sender, EventArgs e)
         {
-            GridPedido gridPedidoForm = new GridPedido();
-
-            // Exibe o formulário como uma janela separada
-            gridPedidoForm.Show();
+          PedidoTimer.Start();
         }
+
+        private void Entrega_Timer_Tick(object sender, EventArgs e)
+        {
+            if (EntregaCollapsed)
+            {
+                EntregaPanel.Height += 10;
+                if (EntregaPanel.Height == EntregaPanel.MaximumSize.Height)
+                {
+                    EntregaCollapsed = false;
+                    Entrega_Timer.Stop();
+                }
+
+            }
+            else
+            {
+                EntregaPanel.Height -= 10;
+                if (EntregaPanel.Height == EntregaPanel.MinimumSize.Height)
+                {
+                    EntregaCollapsed = true;
+                    Entrega_Timer.Stop();
+                }
+            }
+        }
+
+        private void PedidoTimer_Tick(object sender, EventArgs e)
+        {
+            if (PedidoCollapsed)
+            {
+                PedidoPanel.Height += 10;
+                if (PedidoPanel.Height == PedidoPanel.MaximumSize.Height)
+                {
+                    PedidoCollapsed = false;
+                    PedidoTimer.Stop();
+                }
+
+            }
+            else
+            {
+                PedidoPanel.Height -= 10;
+                if (PedidoPanel.Height == PedidoPanel.MinimumSize.Height)
+                {
+                    PedidoCollapsed = true;
+                    PedidoTimer.Stop();
+                }
+            }
+        }
+
+
+
+
+
     }
 }
