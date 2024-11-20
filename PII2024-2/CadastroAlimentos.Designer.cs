@@ -1,4 +1,4 @@
-﻿namespace PII2024_2
+namespace PII2024_2
 {
     partial class CadastroAlimentos
     {
@@ -60,7 +60,6 @@
             // 
             // cmbDoacao
             // 
-            this.cmbDoacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDoacao.FormattingEnabled = true;
             this.cmbDoacao.Location = new System.Drawing.Point(305, 316);
             this.cmbDoacao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -80,7 +79,6 @@
             // 
             // cmbEmpresa
             // 
-            this.cmbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEmpresa.FormattingEnabled = true;
             this.cmbEmpresa.Location = new System.Drawing.Point(416, 286);
             this.cmbEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -194,15 +192,13 @@
             // 
             // cmbOrigem
             // 
-            this.cmbOrigem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOrigem.FormattingEnabled = true;
             this.cmbOrigem.Items.AddRange(new object[] {
             "Compra",
             "Doação"});
-            this.cmbOrigem.Location = new System.Drawing.Point(306, 254);
-            this.cmbOrigem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbOrigem.Location = new System.Drawing.Point(324, 256);
             this.cmbOrigem.Name = "cmbOrigem";
-            this.cmbOrigem.Size = new System.Drawing.Size(287, 24);
+            this.cmbOrigem.Size = new System.Drawing.Size(268, 24);
             this.cmbOrigem.TabIndex = 33;
             // 
             // CadastroAlimentos

@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlTypes;
 
 namespace PII2024_2
 {
@@ -52,6 +53,21 @@ namespace PII2024_2
             da.Fill(ds);
             Desconectar();
             return ds;
+        }
+        public void ExecutarComParametros(string query, Dictionary<string, object> parametros)
+        {
+            using (SqlConnection conexao = new SqlConnection("Server=.\\SQLEXPRESS;Database=BancoPII;UID=sa;PWD=senha123"))
+            {
+                using (SqlCommand comando = new SqlCommand(query, conexao))
+                {
+                    foreach (var parametro in parametros)
+                    {
+                        comando.Parameters.AddWithValue(parametro.Key, parametro.Value ?? DBNull.Value);
+                    }
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
         }
     }
 }

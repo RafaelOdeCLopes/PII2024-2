@@ -77,7 +77,7 @@
             this.Controls.Add(this.CbEntrega);
             this.Controls.Add(this.DgvEntrega);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "GridConsulta";
             this.Text = "Consulta de entrega";
             this.Load += new System.EventHandler(this.GridConsulta_Load);

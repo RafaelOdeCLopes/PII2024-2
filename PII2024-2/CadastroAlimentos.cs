@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PII2024_2
 {
@@ -20,6 +20,7 @@ namespace PII2024_2
         public CadastroAlimentos()
         {
             InitializeComponent();
+
             sql.Conectar();
             using (SqlCommand cmd = new SqlCommand("SELECT id_empresa_fabricante FROM alimentos", sql.Conn))
             {
@@ -50,7 +51,6 @@ namespace PII2024_2
                 }
             }
         }
-
         private void btnSalvarcadastroalimentos_Click(object sender, EventArgs e)
         {
             alimento.Nome = txtNome.Text;
@@ -63,5 +63,6 @@ namespace PII2024_2
             alimento.Inserir();
             MessageBox.Show("Alimento inserido com sucesso!");
         }
+
     }
 }
