@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.lblContato = new System.Windows.Forms.Label();
-            this.tbStatus = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCadastro = new System.Windows.Forms.Label();
             this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblContato
@@ -46,13 +46,6 @@
             this.lblContato.Size = new System.Drawing.Size(41, 16);
             this.lblContato.TabIndex = 22;
             this.lblContato.Text = "Status:";
-            // 
-            // tbStatus
-            // 
-            this.tbStatus.Location = new System.Drawing.Point(184, 243);
-            this.tbStatus.Name = "tbStatus";
-            this.tbStatus.Size = new System.Drawing.Size(154, 20);
-            this.tbStatus.TabIndex = 21;
             // 
             // lblNome
             // 
@@ -95,22 +88,40 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // cbStatus
+            // 
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Items.AddRange(new object[] {
+            "Pendente",
+            "Em andamento",
+            "Concluído",
+            "Cancelado"});
+            this.cbStatus.Location = new System.Drawing.Point(185, 243);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(121, 21);
+            this.cbStatus.TabIndex = 35;
+            // 
             // CadastroEntregadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(593, 354);
+            this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dtpData);
             this.Controls.Add(this.lblContato);
-            this.Controls.Add(this.tbStatus);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblCadastro);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadastroEntregadora";
             this.Text = "CadastroEntregadora";
+            this.Controls.SetChildIndex(this.lblCadastro, 0);
+            this.Controls.SetChildIndex(this.lblNome, 0);
+            this.Controls.SetChildIndex(this.lblContato, 0);
+            this.Controls.SetChildIndex(this.dtpData, 0);
+            this.Controls.SetChildIndex(this.btnSalvar, 0);
+            this.Controls.SetChildIndex(this.cbStatus, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,10 +130,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblContato;
-        private System.Windows.Forms.TextBox tbStatus;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblCadastro;
         private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.ComboBox cbStatus;
     }
 }

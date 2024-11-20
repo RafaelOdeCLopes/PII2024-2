@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,17 @@ namespace PII2024_2
 {
     public partial class Cadastro_EmpresaFabricante : Frm_Menu
     {
+
         public Cadastro_EmpresaFabricante()
         {
             InitializeComponent();
+            SQLServer sql = new SQLServer();
+            sql.Conectar();
+          
         }
+
+
+
 
         private void txt_NomeFabricante_TextChanged(object sender, EventArgs e)
         {
@@ -39,8 +47,9 @@ namespace PII2024_2
             EmpFab.Endereco = txt_EnderecoFabricante.Text;
             EmpFab.Telefone = txt_TelefoneFabricante.Text;
 
-            MessageBox.Show(EmpFab.Endereco);
-            MessageBox.Show(EmpFab.NomeEmpresa);
+            EmpFab.Inserir();
+
+            MessageBox.Show("Inserido Com Sucesso!");
         }
 
         private void Cadastro_EmpresaFabricante_Load(object sender, EventArgs e)
