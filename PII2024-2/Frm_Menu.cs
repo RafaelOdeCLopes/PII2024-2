@@ -222,7 +222,7 @@ namespace PII2024_2
 
         private void btn_cadastroEnt_Click(object sender, EventArgs e)
         {
-            CadastroEntregadora cadastroEntregadora = new CadastroEntregadora();
+            CadastroEntrega cadastroEntregadora = new CadastroEntrega();
             cadastroEntregadora.Show();
             this.Close();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PII2024_2
 {
-    public partial class CadastroEntregadora : Frm_Menu
+    public partial class CadastroEntrega : Frm_Menu
     {
-        public CadastroEntregadora()
+        public CadastroEntrega()
         {
             InitializeComponent();
         }

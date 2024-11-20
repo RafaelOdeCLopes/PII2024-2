@@ -1,6 +1,6 @@
 ﻿namespace PII2024_2
 {
-    partial class CadastroEntregadora
+    partial class CadastroEntrega
     {
         /// <summary>
         /// Required designer variable.

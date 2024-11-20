@@ -21,10 +21,6 @@ namespace PII2024_2
             sql.Conectar();
           
         }
-
-
-
-
         private void txt_NomeFabricante_TextChanged(object sender, EventArgs e)
         {
 
