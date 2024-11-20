@@ -1,14 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlTypes;
+using System.Data.SqlClient;
 
 namespace PII2024_2
 {
@@ -18,42 +17,40 @@ namespace PII2024_2
         bool homeCollapsed;
         SQLServer sql = new SQLServer();
         Alimentos alimento = new Alimentos();
-
         public CadastroAlimentos()
         {
             InitializeComponent();
-            sql.Conectar();
 
-            // Preencher cmbEmpresa com os nomes das empresas fabricantes
-            using (SqlCommand cmd = new SqlCommand("SELECT id, nome_empresa FROM empresas_fabricantes", sql.Conn))
+            sql.Conectar();
+            using (SqlCommand cmd = new SqlCommand("SELECT id_empresa_fabricante FROM alimentos", sql.Conn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    DataTable dtEmpresa = new DataTable();
-                    dtEmpresa.Load(reader);
-                    cmbEmpresa.DataSource = dtEmpresa;
-                    cmbEmpresa.DisplayMember = "nome_empresa"; // Exibe o nome da empresa
-                    cmbEmpresa.ValueMember = "id"; // Armazena a chave primária
+                    while (reader.Read())
+                    {
+                        string idEmpresa = reader["id_empresa_fabricante"].ToString();
+                        if (!cmbEmpresa.Items.Contains(idEmpresa))
+                        {
+                            cmbEmpresa.Items.Add(idEmpresa);
+                        }
+                    }
                 }
             }
-
-            // Preencher cmbDoacao com os nomes dos doadores
-            using (SqlCommand cmd = new SqlCommand(@"
-                SELECT d.id, d.nome 
-                FROM doacoes AS do
-                INNER JOIN doadores AS d ON do.id = d.id", sql.Conn))
+            using (SqlCommand cmd = new SqlCommand("SELECT id_doacao FROM alimentos", sql.Conn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    DataTable dtDoacao = new DataTable();
-                    dtDoacao.Load(reader);
-                    cmbDoacao.DataSource = dtDoacao;
-                    cmbDoacao.DisplayMember = "nome"; // Exibe o nome do doador
-                    cmbDoacao.ValueMember = "id"; // Armazena a chave primária
+                    while (reader.Read())
+                    {
+                        string idDoacao = reader["id_doacao"].ToString();
+                        if (!cmbDoacao.Items.Contains(idDoacao))
+                        {
+                            cmbDoacao.Items.Add(idDoacao);
+                        }
+                    }
                 }
             }
         }
-
         private void btnSalvarcadastroalimentos_Click(object sender, EventArgs e)
         {
             alimento.Nome = txtNome.Text;
@@ -61,27 +58,11 @@ namespace PII2024_2
             alimento.DataValidade = DateTime.Parse(mtbdata.Text);
             alimento.Quantidade = int.Parse(txtQuantidade.Text);
             alimento.Origem = cmbOrigem.SelectedItem.ToString();
-            alimento.IdEmpresaFabricante = int.Parse(cmbEmpresa.SelectedValue.ToString()); // Obtém a chave primária
-            if (alimento.Origem == "Compra")
-            {
-                alimento.IdDoacao = SqlInt16.Null;
-            }
-            else
-            {
-                alimento.IdDoacao = SqlInt16.Parse(cmbDoacao.SelectedValue.ToString()); // Obtém a chave primária
-            }
+            alimento.IdEmpresaFabricante = int.Parse(cmbEmpresa.SelectedIndex.ToString());
+            alimento.IdDoacao = int.Parse(cmbDoacao.Text.ToString());
             alimento.Inserir();
             MessageBox.Show("Alimento inserido com sucesso!");
         }
 
-        private void cmbOrigem_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CadastroAlimentos_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

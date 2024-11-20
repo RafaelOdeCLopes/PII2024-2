@@ -1,4 +1,4 @@
-﻿namespace PII2024_2
+namespace PII2024_2
 {
     partial class Frm_Menu
     {
@@ -45,20 +45,10 @@
             this.btn_Entrega = new System.Windows.Forms.Button();
             this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
-            this.EntregaPanel = new System.Windows.Forms.Panel();
-            this.btn_ConsultaEnt = new System.Windows.Forms.Button();
-            this.btn_cadastroEnt = new System.Windows.Forms.Button();
-            this.PedidoPanel = new System.Windows.Forms.Panel();
-            this.btn_ConsultaPed = new System.Windows.Forms.Button();
-            this.btn_CadastroPed = new System.Windows.Forms.Button();
-            this.Entrega_Timer = new System.Windows.Forms.Timer(this.components);
-            this.PedidoTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).BeginInit();
             this.HomeContainer.SuspendLayout();
-            this.EntregaPanel.SuspendLayout();
-            this.PedidoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebarTimer
@@ -76,8 +66,8 @@
             this.sidebar.BackgroundImage = global::PII2024_2.Properties.Resources.Degrade_Laranjaclaro;
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Controls.Add(this.HomeContainer);
-            this.sidebar.Controls.Add(this.EntregaPanel);
-            this.sidebar.Controls.Add(this.PedidoPanel);
+            this.sidebar.Controls.Add(this.btn_Entrega);
+            this.sidebar.Controls.Add(this.btn_Pedidos);
             this.sidebar.Controls.Add(this.btn_sair);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
@@ -85,7 +75,7 @@
             this.sidebar.MaximumSize = new System.Drawing.Size(200, 450);
             this.sidebar.MinimumSize = new System.Drawing.Size(73, 450);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(73, 450);
+            this.sidebar.Size = new System.Drawing.Size(75, 450);
             this.sidebar.TabIndex = 0;
             // 
             // panel1
@@ -126,16 +116,16 @@
             this.HomeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.HomeContainer.Controls.Add(this.btn_CadastroDoadores);
             this.HomeContainer.Controls.Add(this.btn_CadastroAlimentos);
-            this.HomeContainer.Controls.Add(this.btn_Menu);
             this.HomeContainer.Controls.Add(this.btn_CadastroEntregadora);
             this.HomeContainer.Controls.Add(this.btn_CadastroEmpresaFabricante);
             this.HomeContainer.Controls.Add(this.btn_CadastroFamiliar);
+            this.HomeContainer.Controls.Add(this.btn_Menu);
             this.HomeContainer.Location = new System.Drawing.Point(3, 106);
             this.HomeContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeContainer.MaximumSize = new System.Drawing.Size(200, 229);
-            this.HomeContainer.MinimumSize = new System.Drawing.Size(200, 49);
+            this.HomeContainer.MinimumSize = new System.Drawing.Size(200, 46);
             this.HomeContainer.Name = "HomeContainer";
-            this.HomeContainer.Size = new System.Drawing.Size(200, 49);
+            this.HomeContainer.Size = new System.Drawing.Size(200, 46);
             this.HomeContainer.TabIndex = 6;
             // 
             // btn_CadastroDoadores
@@ -161,7 +151,7 @@
             this.btn_CadastroAlimentos.Name = "btn_CadastroAlimentos";
             this.btn_CadastroAlimentos.Size = new System.Drawing.Size(251, 39);
             this.btn_CadastroAlimentos.TabIndex = 6;
-            this.btn_CadastroAlimentos.Text = "         Cadastro Alimentos";
+            this.btn_CadastroAlimentos.Text = "          Cadastro Alimentos";
             this.btn_CadastroAlimentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_CadastroAlimentos.UseVisualStyleBackColor = false;
             this.btn_CadastroAlimentos.Click += new System.EventHandler(this.btn_CadastroAlimentos_Click);
@@ -211,12 +201,11 @@
             // btn_Menu
             // 
             this.btn_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(119)))), ((int)(((byte)(10)))));
-            this.btn_Menu.FlatAppearance.BorderSize = 0;
             this.btn_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Menu.Location = new System.Drawing.Point(-22, -1);
+            this.btn_Menu.Location = new System.Drawing.Point(-21, 0);
             this.btn_Menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Menu.Name = "btn_Menu";
-            this.btn_Menu.Size = new System.Drawing.Size(251, 53);
+            this.btn_Menu.Size = new System.Drawing.Size(251, 49);
             this.btn_Menu.TabIndex = 1;
             this.btn_Menu.Text = "Cadastros";
             this.btn_Menu.UseVisualStyleBackColor = false;
@@ -227,129 +216,40 @@
             this.btn_Entrega.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Entrega.FlatAppearance.BorderSize = 0;
             this.btn_Entrega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Entrega.Location = new System.Drawing.Point(0, -6);
+            this.btn_Entrega.Location = new System.Drawing.Point(3, 156);
             this.btn_Entrega.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Entrega.Name = "btn_Entrega";
-            this.btn_Entrega.Size = new System.Drawing.Size(203, 65);
+            this.btn_Entrega.Size = new System.Drawing.Size(200, 76);
             this.btn_Entrega.TabIndex = 5;
             this.btn_Entrega.Text = "Entrega";
             this.btn_Entrega.UseVisualStyleBackColor = false;
-            this.btn_Entrega.Click += new System.EventHandler(this.btn_Entrega_Click);
             // 
             // btn_Pedidos
             // 
             this.btn_Pedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Pedidos.FlatAppearance.BorderSize = 0;
             this.btn_Pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Pedidos.Location = new System.Drawing.Point(0, -1);
+            this.btn_Pedidos.Location = new System.Drawing.Point(3, 236);
             this.btn_Pedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Pedidos.Name = "btn_Pedidos";
-            this.btn_Pedidos.Size = new System.Drawing.Size(200, 59);
+            this.btn_Pedidos.Size = new System.Drawing.Size(200, 76);
             this.btn_Pedidos.TabIndex = 4;
             this.btn_Pedidos.Text = "Pedidos";
             this.btn_Pedidos.UseVisualStyleBackColor = false;
-            this.btn_Pedidos.Click += new System.EventHandler(this.btn_Pedidos_Click);
             // 
             // btn_sair
             // 
             this.btn_sair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_sair.FlatAppearance.BorderSize = 0;
             this.btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sair.Location = new System.Drawing.Point(3, 279);
+            this.btn_sair.Location = new System.Drawing.Point(3, 316);
             this.btn_sair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sair.Name = "btn_sair";
-            this.btn_sair.Size = new System.Drawing.Size(200, 51);
+            this.btn_sair.Size = new System.Drawing.Size(200, 75);
             this.btn_sair.TabIndex = 5;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
-            // 
-            // EntregaPanel
-            // 
-            this.EntregaPanel.Controls.Add(this.btn_ConsultaEnt);
-            this.EntregaPanel.Controls.Add(this.btn_cadastroEnt);
-            this.EntregaPanel.Controls.Add(this.btn_Entrega);
-            this.EntregaPanel.Location = new System.Drawing.Point(3, 160);
-            this.EntregaPanel.MaximumSize = new System.Drawing.Size(200, 128);
-            this.EntregaPanel.MinimumSize = new System.Drawing.Size(200, 51);
-            this.EntregaPanel.Name = "EntregaPanel";
-            this.EntregaPanel.Size = new System.Drawing.Size(200, 51);
-            this.EntregaPanel.TabIndex = 6;
-            this.EntregaPanel.Click += new System.EventHandler(this.btn_Entrega_Click);
-            // 
-            // btn_ConsultaEnt
-            // 
-            this.btn_ConsultaEnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btn_ConsultaEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ConsultaEnt.Location = new System.Drawing.Point(-26, 89);
-            this.btn_ConsultaEnt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_ConsultaEnt.Name = "btn_ConsultaEnt";
-            this.btn_ConsultaEnt.Size = new System.Drawing.Size(251, 39);
-            this.btn_ConsultaEnt.TabIndex = 7;
-            this.btn_ConsultaEnt.Text = "            Consulta Entrega";
-            this.btn_ConsultaEnt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ConsultaEnt.UseVisualStyleBackColor = false;
-            // 
-            // btn_cadastroEnt
-            // 
-            this.btn_cadastroEnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btn_cadastroEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cadastroEnt.Location = new System.Drawing.Point(-24, 52);
-            this.btn_cadastroEnt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_cadastroEnt.Name = "btn_cadastroEnt";
-            this.btn_cadastroEnt.Size = new System.Drawing.Size(251, 39);
-            this.btn_cadastroEnt.TabIndex = 6;
-            this.btn_cadastroEnt.Text = "           Cadastro Entrega";
-            this.btn_cadastroEnt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cadastroEnt.UseVisualStyleBackColor = false;
-            // 
-            // PedidoPanel
-            // 
-            this.PedidoPanel.Controls.Add(this.btn_ConsultaPed);
-            this.PedidoPanel.Controls.Add(this.btn_CadastroPed);
-            this.PedidoPanel.Controls.Add(this.btn_Pedidos);
-            this.PedidoPanel.Location = new System.Drawing.Point(3, 217);
-            this.PedidoPanel.MaximumSize = new System.Drawing.Size(200, 131);
-            this.PedidoPanel.MinimumSize = new System.Drawing.Size(200, 57);
-            this.PedidoPanel.Name = "PedidoPanel";
-            this.PedidoPanel.Size = new System.Drawing.Size(200, 57);
-            this.PedidoPanel.TabIndex = 7;
-            // 
-            // btn_ConsultaPed
-            // 
-            this.btn_ConsultaPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btn_ConsultaPed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ConsultaPed.Location = new System.Drawing.Point(-26, 95);
-            this.btn_ConsultaPed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_ConsultaPed.Name = "btn_ConsultaPed";
-            this.btn_ConsultaPed.Size = new System.Drawing.Size(251, 39);
-            this.btn_ConsultaPed.TabIndex = 9;
-            this.btn_ConsultaPed.Text = "            Consulta Entrega";
-            this.btn_ConsultaPed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ConsultaPed.UseVisualStyleBackColor = false;
-            // 
-            // btn_CadastroPed
-            // 
-            this.btn_CadastroPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btn_CadastroPed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CadastroPed.Location = new System.Drawing.Point(-24, 57);
-            this.btn_CadastroPed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_CadastroPed.Name = "btn_CadastroPed";
-            this.btn_CadastroPed.Size = new System.Drawing.Size(251, 39);
-            this.btn_CadastroPed.TabIndex = 8;
-            this.btn_CadastroPed.Text = "           Cadastro Entrega";
-            this.btn_CadastroPed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_CadastroPed.UseVisualStyleBackColor = false;
-            // 
-            // Entrega_Timer
-            // 
-            this.Entrega_Timer.Interval = 5;
-            this.Entrega_Timer.Tick += new System.EventHandler(this.Entrega_Timer_Tick);
-            // 
-            // PedidoTimer
-            // 
-            this.PedidoTimer.Interval = 5;
-            this.PedidoTimer.Tick += new System.EventHandler(this.PedidoTimer_Tick);
             // 
             // Frm_Menu
             // 
@@ -369,8 +269,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).EndInit();
             this.HomeContainer.ResumeLayout(false);
-            this.EntregaPanel.ResumeLayout(false);
-            this.PedidoPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -392,15 +290,6 @@
         private System.Windows.Forms.Button btn_CadastroEmpresaFabricante;
         private System.Windows.Forms.Button btn_CadastroAlimentos;
         private System.Windows.Forms.Button btn_CadastroDoadores;
-        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btn_sair;
-        private System.Windows.Forms.Panel EntregaPanel;
-        private System.Windows.Forms.Button btn_ConsultaEnt;
-        private System.Windows.Forms.Button btn_cadastroEnt;
-        private System.Windows.Forms.Panel PedidoPanel;
-        private System.Windows.Forms.Button btn_ConsultaPed;
-        private System.Windows.Forms.Button btn_CadastroPed;
-        private System.Windows.Forms.Timer Entrega_Timer;
-        private System.Windows.Forms.Timer PedidoTimer;
     }
 }
