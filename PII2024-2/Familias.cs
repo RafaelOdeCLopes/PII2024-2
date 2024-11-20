@@ -11,6 +11,7 @@ namespace PII2024_2
 
         SQLServer sql = new SQLServer();
         public int Id { get; set; }
+        public int idFamilia { get; set; }
         public string NomeResponsavel { get; set; }
         public string Endereco { get; set; }
         public string Telefone { get; set; }
@@ -39,7 +40,11 @@ namespace PII2024_2
         {
             // Comando Cypher utilizando parâmetros
             string query = @"
-    CREATE (f:Familia {
+    MATCH (counter:Counter {type: 'familias'})
+    SET counter.count = counter.count + 1
+    WITH counter.count AS id
+    CREATE (f:Familias {
+        id: id,
         nomeResponsavel: $nomeResponsavel,
         endereco: $endereco,
         telefone: $telefone,
