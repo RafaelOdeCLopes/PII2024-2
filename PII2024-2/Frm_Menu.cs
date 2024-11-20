@@ -116,8 +116,8 @@ namespace PII2024_2
 
         private void btn_CadastroEntregadora_Click(object sender, EventArgs e)
         {
-            CadastroEntregadora cadastroEntregadora = new CadastroEntregadora();
-            cadastroEntregadora.Show();
+            CadastroEmpresasEntregadoras cadastroEmpresaEntregadora = new CadastroEmpresasEntregadoras();
+            cadastroEmpresaEntregadora.Show();
             this.Close();
 
         }
@@ -198,9 +198,33 @@ namespace PII2024_2
             }
         }
 
+ 
 
+        private void btn_CadastroPed_Click(object sender, EventArgs e)
+        {
+            Pedido cadastrodepedido = new Pedido();
+            cadastrodepedido.Show();
+            this.Close();
+        }
 
+        private void btn_ConsultaPed_Click(object sender, EventArgs e)
+        {
+            GridPedido gridPedido = new GridPedido();
+            gridPedido.Show();
+        }
 
+        private void btn_ConsultaEnt_Click(object sender, EventArgs e)
+        {
+            GridConsulta gridEntrega = new GridConsulta();
+            gridEntrega.Show();
+            this.Close();
+        }
 
+        private void btn_cadastroEnt_Click(object sender, EventArgs e)
+        {
+            CadastroEntregadora cadastroEntregadora = new CadastroEntregadora();
+            cadastroEntregadora.Show();
+            this.Close();
+        }
     }
 }

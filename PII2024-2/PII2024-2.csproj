@@ -144,11 +144,11 @@
     <Compile Include="Neo4j.cs" />
     <Compile Include="Pedidos.cs" />
     <Compile Include="SQLServer.cs" />
-    <Compile Include="CadastroEmpresaEntregadora.cs">
+    <Compile Include="frm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroEmpresaEntregadora.Designer.cs">
-      <DependentUpon>CadastroEmpresaEntregadora.cs</DependentUpon>
+    <Compile Include="frm1.Designer.cs">
+      <DependentUpon>frm1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -164,8 +164,8 @@
     <EmbeddedResource Include="Cadastro_EmpresaFabricante.resx">
       <DependentUpon>Cadastro_EmpresaFabricante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroEmpresaEntregadora.resx">
-      <DependentUpon>CadastroEmpresaEntregadora.cs</DependentUpon>
+    <EmbeddedResource Include="frm1.resx">
+      <DependentUpon>frm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroAlimentos.resx">
       <DependentUpon>CadastroAlimentos.cs</DependentUpon>

@@ -16,7 +16,7 @@ namespace PII2024_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CadastroEmpresaEntregadora());
+            Application.Run(new frm1());
         }
     }
 }

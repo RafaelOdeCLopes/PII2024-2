@@ -170,7 +170,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Pedido";
-            this.Text = "Form2";
+            this.Text = "CadastrodePedido";
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.txtPedido, 0);
