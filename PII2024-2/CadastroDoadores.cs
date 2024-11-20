@@ -16,6 +16,19 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
-        //ola
+
+        private async void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Doadores Doad = new Doadores();
+            var neo4j = new Neo4j();
+
+            Doad.Nome = txt_Nome.Text;
+            Doad.Contato = txt_Contato.Text;
+
+            await Doad.InserirNoNeo4j(neo4j);
+
+
+            MessageBox.Show("Inserido Com Sucesso!");
+        }
     }
 }
