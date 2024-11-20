@@ -171,6 +171,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Pedido";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.txtPedido, 0);

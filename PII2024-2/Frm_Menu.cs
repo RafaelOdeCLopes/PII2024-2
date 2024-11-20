@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,6 +54,8 @@ namespace PII2024_2
                     sidebarTimer.Stop();
 
                 }
+
+                //Garante que o sidebar fique na frente ao expandir
                 sidebar.BringToFront();
             }
             

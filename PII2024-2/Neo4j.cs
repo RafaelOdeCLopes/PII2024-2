@@ -14,17 +14,17 @@ namespace PII2024_2
 
         public void Conectar()
         {
-            string uri = "neo4j+s://8f8e1f98.databases.neo4j.io";
-            string user = "neo4j";
-            string password = "Noh5JL8vhG2qKFfzHu4R7zKOjdSdjKTU-Xo-NTWAlT4";
+            string uri = "uri";
+            string user = "usuário";
+            string password = "senha";
             driver = GraphDatabase.Driver(uri, AuthTokens.Basic(user, password));
         }
 
-        public async Task ExecutarComandoAsync(string query, Dictionary<string, object> parametros)
+        public async Task ExecutarComandoAsync(string query)
         {
             Conectar();
             var session = driver.AsyncSession();
-            await session.RunAsync(query, parametros);  
+            await session.RunAsync(query);
             await session.CloseAsync();
             Dispose();
         }

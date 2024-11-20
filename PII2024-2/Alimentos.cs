@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +8,7 @@ namespace PII2024_2
 {
     internal class Alimentos
     {
+        SQLServer sql = new SQLServer();
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
@@ -16,7 +17,6 @@ namespace PII2024_2
         public string Origem { get; set; }
         public int IdEmpresaFabricante { get; set; }
         public int IdDoacao { get; set; }
-        SQLServer sql = new SQLServer();
 
         public void Inserir()
         {
@@ -24,5 +24,6 @@ namespace PII2024_2
                            $"VALUES ('{Nome}', '{Descricao}' , '{DataValidade}', '{Quantidade}', '{Origem}', '{IdEmpresaFabricante}', '{IdDoacao}')";
             sql.Executar(query);
         }
+
     }
 }
