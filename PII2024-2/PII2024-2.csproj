@@ -117,6 +117,12 @@
     <Compile Include="CadastrodePedido.Designer.cs">
       <DependentUpon>CadastrodePedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroEmpresasEntregadoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroEmpresasEntregadoras.Designer.cs">
+      <DependentUpon>CadastroEmpresasEntregadoras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,11 +144,11 @@
     <Compile Include="Neo4j.cs" />
     <Compile Include="Pedidos.cs" />
     <Compile Include="SQLServer.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="CadastroEmpresaEntregadora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CadastroEmpresaEntregadora.Designer.cs">
+      <DependentUpon>CadastroEmpresaEntregadora.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,14 +164,17 @@
     <EmbeddedResource Include="Cadastro_EmpresaFabricante.resx">
       <DependentUpon>Cadastro_EmpresaFabricante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CadastroEmpresaEntregadora.resx">
+      <DependentUpon>CadastroEmpresaEntregadora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroAlimentos.resx">
       <DependentUpon>CadastroAlimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrodePedido.resx">
       <DependentUpon>CadastrodePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroEmpresasEntregadoras.resx">
+      <DependentUpon>CadastroEmpresasEntregadoras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Menu.resx">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
