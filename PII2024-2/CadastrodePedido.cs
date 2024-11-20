@@ -12,10 +12,11 @@ namespace PII2024_2
 {
     public partial class Pedido : Frm_Menu
     {
+        SQLServer sql = new SQLServer();
+        Pedidos Ped = new Pedidos();
         public Pedido()
         {
             InitializeComponent();
-            SQLServer sql = new SQLServer();
             sql.Conectar();
         }
 
@@ -27,7 +28,6 @@ namespace PII2024_2
         private void btnSalvarpedido_Click(object sender, EventArgs e)
         {
 
-            Pedidos Ped = new Pedidos();
             Ped.NomePedido = txtPedido.Text;
             Ped.IdFamilia = cmbFamilia.SelectedIndex;
             Ped.IdAlimento = cmbAlimento.SelectedIndex;
