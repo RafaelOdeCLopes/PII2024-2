@@ -23,5 +23,22 @@ namespace PII2024_2
         {
 
         }
+
+        private void btnSalvarpedido_Click(object sender, EventArgs e)
+        {
+
+            Pedidos Ped = new Pedidos();
+            Ped.NomePedido = txtPedido.Text;
+            Ped.IdFamilia = cmbFamilia.SelectedIndex;
+            Ped.IdAlimento = cmbAlimento.SelectedIndex;
+            Ped.Quantidade = txtQuantidade.TabIndex;
+            Ped.DataPedido = mtbdataPedido.Value;
+
+
+
+            Ped.Inserir();
+
+            MessageBox.Show("Inserido Com Sucesso!");
+        }
     }
 }

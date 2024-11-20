@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnSalvarpedido = new System.Windows.Forms.Button();
-            this.mtbdataPedido = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,28 +39,20 @@
             this.txtPedido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.mtbdataPedido = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnSalvarpedido
             // 
             this.btnSalvarpedido.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvarpedido.Location = new System.Drawing.Point(291, 286);
-            this.btnSalvarpedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalvarpedido.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvarpedido.Name = "btnSalvarpedido";
             this.btnSalvarpedido.Size = new System.Drawing.Size(96, 37);
             this.btnSalvarpedido.TabIndex = 33;
-            this.btnSalvarpedido.Text = "SALVAR";
+            this.btnSalvarpedido.Text = "Salvar";
             this.btnSalvarpedido.UseVisualStyleBackColor = true;
-            // 
-            // mtbdataPedido
-            // 
-            this.mtbdataPedido.Location = new System.Drawing.Point(275, 233);
-            this.mtbdataPedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mtbdataPedido.Mask = "00/00/0000";
-            this.mtbdataPedido.Name = "mtbdataPedido";
-            this.mtbdataPedido.Size = new System.Drawing.Size(60, 20);
-            this.mtbdataPedido.TabIndex = 32;
-            this.mtbdataPedido.ValidatingType = typeof(System.DateTime);
+            this.btnSalvarpedido.Click += new System.EventHandler(this.btnSalvarpedido_Click);
             // 
             // label6
             // 
@@ -77,7 +68,7 @@
             // txtQuantidade
             // 
             this.txtQuantidade.Location = new System.Drawing.Point(268, 197);
-            this.txtQuantidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQuantidade.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(165, 20);
             this.txtQuantidade.TabIndex = 30;
@@ -97,7 +88,7 @@
             // 
             this.cmbAlimento.FormattingEnabled = true;
             this.cmbAlimento.Location = new System.Drawing.Point(245, 159);
-            this.cmbAlimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbAlimento.Margin = new System.Windows.Forms.Padding(2);
             this.cmbAlimento.Name = "cmbAlimento";
             this.cmbAlimento.Size = new System.Drawing.Size(188, 21);
             this.cmbAlimento.TabIndex = 28;
@@ -117,7 +108,7 @@
             // 
             this.cmbFamilia.FormattingEnabled = true;
             this.cmbFamilia.Location = new System.Drawing.Point(245, 124);
-            this.cmbFamilia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbFamilia.Margin = new System.Windows.Forms.Padding(2);
             this.cmbFamilia.Name = "cmbFamilia";
             this.cmbFamilia.Size = new System.Drawing.Size(188, 21);
             this.cmbFamilia.TabIndex = 26;
@@ -136,7 +127,7 @@
             // txtPedido
             // 
             this.txtPedido.Location = new System.Drawing.Point(245, 93);
-            this.txtPedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPedido.Margin = new System.Windows.Forms.Padding(2);
             this.txtPedido.Name = "txtPedido";
             this.txtPedido.Size = new System.Drawing.Size(188, 20);
             this.txtPedido.TabIndex = 24;
@@ -163,14 +154,22 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Pedidos";
             // 
+            // mtbdataPedido
+            // 
+            this.mtbdataPedido.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.mtbdataPedido.Location = new System.Drawing.Point(283, 230);
+            this.mtbdataPedido.Name = "mtbdataPedido";
+            this.mtbdataPedido.Size = new System.Drawing.Size(80, 20);
+            this.mtbdataPedido.TabIndex = 34;
+            // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.btnSalvarpedido);
             this.Controls.Add(this.mtbdataPedido);
+            this.Controls.Add(this.btnSalvarpedido);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtQuantidade);
             this.Controls.Add(this.label5);
@@ -194,8 +193,8 @@
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.txtQuantidade, 0);
             this.Controls.SetChildIndex(this.label6, 0);
-            this.Controls.SetChildIndex(this.mtbdataPedido, 0);
             this.Controls.SetChildIndex(this.btnSalvarpedido, 0);
+            this.Controls.SetChildIndex(this.mtbdataPedido, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,7 +203,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalvarpedido;
-        private System.Windows.Forms.MaskedTextBox mtbdataPedido;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.Label label5;
@@ -215,5 +213,6 @@
         private System.Windows.Forms.TextBox txtPedido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker mtbdataPedido;
     }
 }
