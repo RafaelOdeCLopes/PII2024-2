@@ -16,5 +16,15 @@ namespace PII2024_2
         {
             InitializeComponent();
         }
+
+        private void btnSalvarEntregadora_Click(object sender, EventArgs e)
+        {
+            EmpresasEntregadoras EmpEntre = new EmpresasEntregadoras();
+            EmpEntre.NomeEmpresa = TbNomeEmpresaEntregadora.Text;
+            EmpEntre.Endereco = txtEndereçoentregadora.Text;
+            EmpEntre.Telefone = txttelefoneentregadora.Text;
+            EmpEntre.Inserir();
+        }
+
     }
 }

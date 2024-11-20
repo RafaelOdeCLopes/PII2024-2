@@ -111,6 +111,7 @@
             this.btnSalvarEntregadora.TabIndex = 16;
             this.btnSalvarEntregadora.Text = "Salvar";
             this.btnSalvarEntregadora.UseVisualStyleBackColor = true;
+            this.btnSalvarEntregadora.Click += new System.EventHandler(this.btnSalvarEntregadora_Click);
             // 
             // CadastroEmpresasEntregadoras
             // 
