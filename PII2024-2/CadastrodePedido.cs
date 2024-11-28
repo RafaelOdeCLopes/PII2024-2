@@ -36,7 +36,7 @@ namespace PII2024_2
             Ped.NomePedido = txtPedido.Text;
             Ped.IdFamilia = cmbFamilia.SelectedIndex;
             Ped.IdAlimento = cmbAlimento.SelectedIndex;
-            Ped.Quantidade = txtQuantidade.TabIndex;
+            Ped.Quantidade = int.Parse(txtQuantidade.Text);
             Ped.DataPedido = mtbdataPedido.Value;
 
 

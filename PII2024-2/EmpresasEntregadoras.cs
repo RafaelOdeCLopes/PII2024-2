@@ -22,11 +22,11 @@ namespace PII2024_2
             string query = @"INSERT INTO empresas_entregadoras 
                (nome_empresa, endereco, telefone)
                VALUES 
-               (@NomEmpresa, @Endereco, @Telefone)";
+               (@NomeEmpresa, @Endereco, @Telefone)";
 
             var parametros = new Dictionary<string, object>
             {
-            {"@nomeEmpresa", NomeEmpresa},
+            {"@NomeEmpresa", NomeEmpresa},
             {"@Endereco", Endereco},
             {"@Telefone", Telefone},
 
