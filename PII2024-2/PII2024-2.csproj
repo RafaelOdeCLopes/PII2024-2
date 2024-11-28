@@ -221,5 +221,8 @@
   <ItemGroup>
     <None Include="Resources\menu_png.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-heart-holding-hands-handshake-hand-holding-love-hand-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

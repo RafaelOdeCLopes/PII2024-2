@@ -99,5 +99,16 @@ namespace PII2024_2.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_heart_holding_hands_handshake_hand_holding_love_hand_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-heart-holding-hands-handshake-hand-holding-love-hand-removebg-preview" +
+                        "", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
