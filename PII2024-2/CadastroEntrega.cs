@@ -20,28 +20,14 @@ namespace PII2024_2
         {
             InitializeComponent();
             sql.Conectar();
-            using (SqlCommand cmd = new SqlCommand(@"
-                SELECT p.id, p.nome_pedido 
-                FROM pedidos AS p
-                INNER JOIN entregas AS e ON e.id = p.id", sql.Conn))
-            {
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    DataTable dtPedidos = new DataTable();
-                    dtPedidos.Load(reader);
-                    cbPedido.DataSource = dtPedidos;
-                    cbPedido.DisplayMember = "nome_pedido"; // Exibe o nome do pedido
-                    cbPedido.ValueMember = "id"; // Armazena a chave primária
-                }
-            }
         }
         private void CadastroEntrega_Load(object sender, EventArgs e)
         {
 
-           /* using (SqlCommand cmd = new SqlCommand(@"
+            using (SqlCommand cmd = new SqlCommand(@"
                 SELECT p.id, p.nome_pedido 
                 FROM pedidos AS p
-                INNER JOIN entregas AS e ON e.id = p.id", sql.Conn))
+                LEFT JOIN entregas AS e ON p.id = e.id_pedido;", sql.Conn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -52,19 +38,18 @@ namespace PII2024_2
                     cbPedido.ValueMember = "id"; // Armazena a chave primária
                 }
             }
-           */
 
 
             using (SqlCommand cmd = new SqlCommand(@"
                 SELECT empe.id, empe.nome_empresa 
                 FROM empresas_entregadoras AS empe
-                INNER JOIN entregas AS e ON e.id = empe.id", sql.Conn))
+                LEFT JOIN entregas AS e ON empe.id = e.id_empresa_entregadora", sql.Conn))
             {
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    DataTable dtPedidos = new DataTable();
-                    dtPedidos.Load(reader);
-                    cbEmpresa.DataSource = dtPedidos;
+                    DataTable dtEmpresas = new DataTable();
+                    dtEmpresas.Load(reader);
+                    cbEmpresa.DataSource = dtEmpresas;
                     cbEmpresa.DisplayMember = "nome_empresa"; // Exibe o nome da empresa
                     cbEmpresa.ValueMember = "id"; // Armazena a chave primária
                 }
@@ -73,7 +58,7 @@ namespace PII2024_2
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-           // Ent.NomeEntrega = txt_NomeEntrega;
+            // Ent.NomeEntrega = txt_NomeEntrega;
             Ent.IdPedido = cbPedido.SelectedIndex;
             Ent.IdEmpresaEntregadora = cbEmpresa.SelectedIndex;
             Ent.DataEntrega = dtpData.Value;
@@ -86,6 +71,6 @@ namespace PII2024_2
             MessageBox.Show("Inserido Com Sucesso!");
         }
 
-       
+
     }
 }
