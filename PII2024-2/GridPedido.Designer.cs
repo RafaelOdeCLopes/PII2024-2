@@ -42,6 +42,7 @@
             this.DgvPedido.RowHeadersWidth = 51;
             this.DgvPedido.Size = new System.Drawing.Size(367, 257);
             this.DgvPedido.TabIndex = 0;
+            this.DgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPedido_CellContentClick);
             // 
             // CbPedido
             // 
@@ -76,6 +77,9 @@
             this.DoubleBuffered = true;
             this.Name = "GridPedido";
             this.Text = "Consulta de pedidos";
+            this.Controls.SetChildIndex(this.DgvPedido, 0);
+            this.Controls.SetChildIndex(this.CbPedido, 0);
+            this.Controls.SetChildIndex(this.lblPedido, 0);
             ((System.ComponentModel.ISupportInitialize)(this.DgvPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

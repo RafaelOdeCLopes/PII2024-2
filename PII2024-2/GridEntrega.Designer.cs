@@ -45,7 +45,6 @@
             this.lblEntrega.Size = new System.Drawing.Size(322, 31);
             this.lblEntrega.TabIndex = 6;
             this.lblEntrega.Text = "Faça a consulta da entrega :";
-            this.lblEntrega.Click += new System.EventHandler(this.lblPedido_Click);
             // 
             // CbEntrega
             // 
@@ -80,7 +79,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "GridConsulta";
             this.Text = "Consulta de entrega";
-            this.Load += new System.EventHandler(this.GridConsulta_Load);
             this.Controls.SetChildIndex(this.DgvEntrega, 0);
             this.Controls.SetChildIndex(this.CbEntrega, 0);
             this.Controls.SetChildIndex(this.lblEntrega, 0);
