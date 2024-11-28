@@ -116,7 +116,7 @@ namespace PII2024_2
             if (driver != null)
             {
                 driver.Dispose();
-                driver = null; // Certifique-se de que o driver é redefinido
+                driver = null; 
             }
         }
     }
