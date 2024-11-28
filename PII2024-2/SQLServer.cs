@@ -44,6 +44,37 @@ namespace PII2024_2
             Desconectar();
             return dt;
         }
+
+        public DataTable RetornarTabelaComParametros(string query, Dictionary<string, object> parametros)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (SqlConnection conexao = new SqlConnection("Server=.\\SQLEXPRESS;Database=BancoPII;UID=sa;PWD=senha123"))
+                {
+                    using (SqlCommand comando = new SqlCommand(query, conexao))
+                    {
+                        // Adiciona os parâmetros à consulta
+                        foreach (var parametro in parametros)
+                        {
+                            comando.Parameters.AddWithValue(parametro.Key, parametro.Value ?? DBNull.Value);
+                        }
+
+                        SqlDataAdapter adaptador = new SqlDataAdapter(comando);
+                        conexao.Open();
+                        adaptador.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao executar consulta parametrizada: {ex.Message}", ex);
+            }
+
+            return dt;
+        }
+
         public DataSet RetornarBanco(string sql)
         {
             DataSet ds = new DataSet();
