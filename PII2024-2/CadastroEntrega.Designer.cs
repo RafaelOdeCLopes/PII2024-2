@@ -162,6 +162,7 @@
             this.DoubleBuffered = true;
             this.Name = "CadastroEntrega";
             this.Text = "CadastroEntregadora";
+            this.Load += new System.EventHandler(this.CadastroEntrega_Load);
             this.Controls.SetChildIndex(this.lblCadastro, 0);
             this.Controls.SetChildIndex(this.lblNome, 0);
             this.Controls.SetChildIndex(this.lblStatus, 0);
