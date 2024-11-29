@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
+            this.Entrega_Timer = new System.Windows.Forms.Timer(this.components);
+            this.PedidoTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_Menu = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@
             this.btn_Pedidos = new System.Windows.Forms.Button();
             this.btn_CadastroPed = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
-            this.Entrega_Timer = new System.Windows.Forms.Timer(this.components);
-            this.PedidoTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButtom)).BeginInit();
@@ -71,6 +71,16 @@
             this.HomeTimer.Interval = 5;
             this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
             // 
+            // Entrega_Timer
+            // 
+            this.Entrega_Timer.Interval = 5;
+            this.Entrega_Timer.Tick += new System.EventHandler(this.Entrega_Timer_Tick);
+            // 
+            // PedidoTimer
+            // 
+            this.PedidoTimer.Interval = 5;
+            this.PedidoTimer.Tick += new System.EventHandler(this.PedidoTimer_Tick);
+            // 
             // sidebar
             // 
             this.sidebar.BackgroundImage = global::PII2024_2.Properties.Resources.Degrade_Laranjaclaro;
@@ -81,7 +91,7 @@
             this.sidebar.Controls.Add(this.btn_sair);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
             this.sidebar.MaximumSize = new System.Drawing.Size(150, 366);
             this.sidebar.MinimumSize = new System.Drawing.Size(55, 366);
             this.sidebar.Name = "sidebar";
@@ -94,7 +104,7 @@
             this.panel1.Controls.Add(this.lbl_Menu);
             this.panel1.Controls.Add(this.MenuButtom);
             this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 81);
             this.panel1.TabIndex = 0;
@@ -114,7 +124,7 @@
             this.MenuButtom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuButtom.Image = global::PII2024_2.Properties.Resources.menu_png;
             this.MenuButtom.Location = new System.Drawing.Point(7, 7);
-            this.MenuButtom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MenuButtom.Margin = new System.Windows.Forms.Padding(2);
             this.MenuButtom.Name = "MenuButtom";
             this.MenuButtom.Size = new System.Drawing.Size(40, 45);
             this.MenuButtom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,7 +142,7 @@
             this.HomeContainer.Controls.Add(this.btn_CadastroEmpresaFabricante);
             this.HomeContainer.Controls.Add(this.btn_CadastroFamiliar);
             this.HomeContainer.Location = new System.Drawing.Point(2, 87);
-            this.HomeContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HomeContainer.Margin = new System.Windows.Forms.Padding(2);
             this.HomeContainer.MaximumSize = new System.Drawing.Size(150, 186);
             this.HomeContainer.MinimumSize = new System.Drawing.Size(150, 40);
             this.HomeContainer.Name = "HomeContainer";
@@ -144,7 +154,7 @@
             this.btn_CadastroDoadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroDoadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CadastroDoadores.Location = new System.Drawing.Point(-19, 125);
-            this.btn_CadastroDoadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CadastroDoadores.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroDoadores.Name = "btn_CadastroDoadores";
             this.btn_CadastroDoadores.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroDoadores.TabIndex = 7;
@@ -159,7 +169,7 @@
             this.btn_Menu.FlatAppearance.BorderSize = 0;
             this.btn_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Menu.Location = new System.Drawing.Point(-20, -3);
-            this.btn_Menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Menu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Menu.Name = "btn_Menu";
             this.btn_Menu.Size = new System.Drawing.Size(188, 43);
             this.btn_Menu.TabIndex = 1;
@@ -172,7 +182,7 @@
             this.btn_CadastroAlimentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroAlimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CadastroAlimentos.Location = new System.Drawing.Point(-16, 156);
-            this.btn_CadastroAlimentos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CadastroAlimentos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroAlimentos.Name = "btn_CadastroAlimentos";
             this.btn_CadastroAlimentos.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroAlimentos.TabIndex = 6;
@@ -186,7 +196,7 @@
             this.btn_CadastroEntregadora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroEntregadora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CadastroEntregadora.Location = new System.Drawing.Point(-19, 98);
-            this.btn_CadastroEntregadora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CadastroEntregadora.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroEntregadora.Name = "btn_CadastroEntregadora";
             this.btn_CadastroEntregadora.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroEntregadora.TabIndex = 4;
@@ -200,7 +210,7 @@
             this.btn_CadastroEmpresaFabricante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroEmpresaFabricante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CadastroEmpresaFabricante.Location = new System.Drawing.Point(-19, 68);
-            this.btn_CadastroEmpresaFabricante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CadastroEmpresaFabricante.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroEmpresaFabricante.Name = "btn_CadastroEmpresaFabricante";
             this.btn_CadastroEmpresaFabricante.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroEmpresaFabricante.TabIndex = 3;
@@ -214,7 +224,7 @@
             this.btn_CadastroFamiliar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroFamiliar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CadastroFamiliar.Location = new System.Drawing.Point(-17, 38);
-            this.btn_CadastroFamiliar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CadastroFamiliar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroFamiliar.Name = "btn_CadastroFamiliar";
             this.btn_CadastroFamiliar.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroFamiliar.TabIndex = 2;
@@ -229,7 +239,7 @@
             this.EntregaPanel.Controls.Add(this.btn_Entrega);
             this.EntregaPanel.Controls.Add(this.btn_cadastroEnt);
             this.EntregaPanel.Location = new System.Drawing.Point(2, 131);
-            this.EntregaPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EntregaPanel.Margin = new System.Windows.Forms.Padding(2);
             this.EntregaPanel.MaximumSize = new System.Drawing.Size(150, 104);
             this.EntregaPanel.MinimumSize = new System.Drawing.Size(150, 41);
             this.EntregaPanel.Name = "EntregaPanel";
@@ -242,7 +252,7 @@
             this.btn_ConsultaEnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_ConsultaEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ConsultaEnt.Location = new System.Drawing.Point(-20, 72);
-            this.btn_ConsultaEnt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ConsultaEnt.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ConsultaEnt.Name = "btn_ConsultaEnt";
             this.btn_ConsultaEnt.Size = new System.Drawing.Size(188, 32);
             this.btn_ConsultaEnt.TabIndex = 7;
@@ -257,7 +267,7 @@
             this.btn_Entrega.FlatAppearance.BorderSize = 0;
             this.btn_Entrega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Entrega.Location = new System.Drawing.Point(-2, -6);
-            this.btn_Entrega.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Entrega.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Entrega.Name = "btn_Entrega";
             this.btn_Entrega.Size = new System.Drawing.Size(152, 53);
             this.btn_Entrega.TabIndex = 5;
@@ -270,7 +280,7 @@
             this.btn_cadastroEnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_cadastroEnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cadastroEnt.Location = new System.Drawing.Point(-18, 42);
-            this.btn_cadastroEnt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cadastroEnt.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cadastroEnt.Name = "btn_cadastroEnt";
             this.btn_cadastroEnt.Size = new System.Drawing.Size(188, 32);
             this.btn_cadastroEnt.TabIndex = 6;
@@ -285,7 +295,7 @@
             this.PedidoPanel.Controls.Add(this.btn_Pedidos);
             this.PedidoPanel.Controls.Add(this.btn_CadastroPed);
             this.PedidoPanel.Location = new System.Drawing.Point(2, 176);
-            this.PedidoPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PedidoPanel.Margin = new System.Windows.Forms.Padding(2);
             this.PedidoPanel.MaximumSize = new System.Drawing.Size(150, 106);
             this.PedidoPanel.MinimumSize = new System.Drawing.Size(150, 46);
             this.PedidoPanel.Name = "PedidoPanel";
@@ -297,7 +307,7 @@
             this.btn_ConsultaPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_ConsultaPed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ConsultaPed.Location = new System.Drawing.Point(-20, 77);
-            this.btn_ConsultaPed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ConsultaPed.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ConsultaPed.Name = "btn_ConsultaPed";
             this.btn_ConsultaPed.Size = new System.Drawing.Size(188, 29);
             this.btn_ConsultaPed.TabIndex = 9;
@@ -312,7 +322,7 @@
             this.btn_Pedidos.FlatAppearance.BorderSize = 0;
             this.btn_Pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Pedidos.Location = new System.Drawing.Point(0, 0);
-            this.btn_Pedidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Pedidos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Pedidos.Name = "btn_Pedidos";
             this.btn_Pedidos.Size = new System.Drawing.Size(150, 48);
             this.btn_Pedidos.TabIndex = 4;
@@ -325,7 +335,7 @@
             this.btn_CadastroPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
             this.btn_CadastroPed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CadastroPed.Location = new System.Drawing.Point(-18, 46);
-            this.btn_CadastroPed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CadastroPed.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CadastroPed.Name = "btn_CadastroPed";
             this.btn_CadastroPed.Size = new System.Drawing.Size(188, 32);
             this.btn_CadastroPed.TabIndex = 8;
@@ -340,23 +350,13 @@
             this.btn_sair.FlatAppearance.BorderSize = 0;
             this.btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sair.Location = new System.Drawing.Point(2, 226);
-            this.btn_sair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sair.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(150, 41);
             this.btn_sair.TabIndex = 5;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click_1);
-            // 
-            // Entrega_Timer
-            // 
-            this.Entrega_Timer.Interval = 5;
-            this.Entrega_Timer.Tick += new System.EventHandler(this.Entrega_Timer_Tick);
-            // 
-            // PedidoTimer
-            // 
-            this.PedidoTimer.Interval = 5;
-            this.PedidoTimer.Tick += new System.EventHandler(this.PedidoTimer_Tick);
             // 
             // Frm_Menu
             // 
@@ -366,7 +366,7 @@
             this.ClientSize = new System.Drawing.Size(600, 367);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
